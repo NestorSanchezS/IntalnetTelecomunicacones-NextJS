@@ -9,7 +9,7 @@ const TopHeaderTwo = () => {
                     <div className="col-xl-7 col-lg-6 col-md-7 col-sm-7">
                         <div className="header-top-left">
                             <ul>
-                                <li className="d-none d-xxl-flex"><i className="flaticon-location"></i> 14/A, Queen Street City, New York, US</li>
+                                <li className="d-none d-xxl-flex"><i className="flaticon-location"></i> Montería - Córdoba, Colombia, CO</li>
                                 <li className="d-none d-lg-flex"><i className="flaticon-email"></i> intalnet.monteria@gmail.com</li>
                                 <li className="d-xxxxl-flex"><i className="flaticon-clock"></i> Horario de apertura : 8: AM - 6 PM</li>
                             </ul>
@@ -20,7 +20,7 @@ const TopHeaderTwo = () => {
                             <ul>
                                 <li className="header-user-info">
                                     <i className="flaticon-businessman"></i>
-                                    <Link href="/home-2"><a>Login / Register</a></Link>
+                                    <Link href="/home-2"><a>Login / Registrarse</a></Link>
                                 </li>
                                 <li className="header-social">
                                     <a href="#" target="_blank"><i className="fab fa-twitter"></i></a>
