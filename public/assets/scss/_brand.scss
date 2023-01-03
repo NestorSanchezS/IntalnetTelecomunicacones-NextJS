@@ -1,0 +1,26 @@
+/*==============================================
+14. brand
+================================================*/
+.brand-active .col {
+	padding: 0 15px;
+}
+.brand-item {
+    text-align: center;
+}
+.brand-item a {
+	display: inline-block;
+}
+.brand-item img {
+    display: inline-block;
+    opacity: .3;
+    filter: grayscale(1) brightness(0) contrast(0);
+    -webkit-filter: grayscale(1) brightness(0) contrast(0);
+}
+.brand-item a:hover img {
+	opacity: 1;
+	filter: grayscale(0) brightness(1) contrast(1);
+	-webkit-filter: grayscale(0) brightness(1) contrast(1);
+}
+.ptt-0 {
+    padding-top: 0px;
+}

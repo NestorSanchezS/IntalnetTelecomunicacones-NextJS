@@ -1,0 +1,98 @@
+/*==============================================
+16. faq
+================================================*/
+
+.accordion__item {
+    border: 1px solid #E1E6EE;
+}
+.accordion__button {
+    color: var(--heading-text-color);
+    padding: 17px 25px;
+	font-size: 18px;
+    line-height: 1.45;
+    background: none;
+}
+.accordion-button:not(.collapsed) {
+    color: var(--heading-text-color);
+    background-color: transparent;
+    box-shadow: none;
+}
+.accordion__button:focus {
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button::after {
+	display: none;
+}
+.accordion__body {
+    padding: 13px 25px 30px;
+    border-top: 1px solid #E1E6EE;
+    line-height: 1.75;
+}
+.faq-map-title {
+	margin-bottom: 28px;
+}
+.faq-map-title .title {
+    font-size: 30px;
+    margin-bottom: 16px;
+}
+.faq-map-title p {
+    width: 75%;
+    margin-bottom: 0;
+}
+.faq-map .map-btn {
+    background: #16BE8A;
+    text-transform: capitalize;
+}
+.faq-map .map-btn::after {
+	display: none;
+}
+.section-desc p {
+    margin-bottom: 0;
+}
+.accordion__panel {
+    padding-top: 0px;
+}
+.faq-wrapper2 {
+    .accordion__button:hover {
+        background: none !important;
+    }
+    .accordion__button {
+        position: relative;
+    }
+    .accordion__button::before {
+        position: absolute;
+        left: 15px;
+        z-index: 5;
+        top: 22px;
+        @media #{$lg} {
+            top: 23px;
+        }
+        @media #{$xs} {
+            top: 24px;
+        }
+    }
+    .accordion-button {
+        padding: 0px 15px;
+        color: var(--heading-text-color);
+        font-family: var(--font-family-body);
+        font-weight: 500;
+    }
+    .accordion-button:focus {
+        border-color: transparent;
+        box-shadow: none;
+    }
+}
+.faq-wrappers {
+    .accordion {
+        border: none;
+    }
+}
+.accordion__item + .accordion__item {
+	border-top: 0;
+}
+
+.accordion__button[aria-expanded="true"]::before, .accordion__button[aria-selected="true"]::before {
+    top: 20px !important;
+}

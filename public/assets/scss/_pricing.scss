@@ -1,0 +1,328 @@
+/*==============================================
+18. pricing
+================================================*/
+
+.section-title .title {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+.pricing-area .section-title p {
+    max-width: 81%;
+    margin: 20px auto 0;
+}
+.pricing-plan-wrap {
+    padding: 0 75px;
+}
+.pricing-item {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	transition: .3s linear;
+	overflow: hidden;
+	-webkit-transition: .3s linear;
+	-moz-transition: .3s linear;
+	-ms-transition: .3s linear;
+	-o-transition: .3s linear;
+}
+.pricing-thumb {
+	position: relative;
+}
+.pricing-thumb::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to top, #0c1020 0%, transparent 100%);
+	opacity: 0.65;
+}
+.pricing-thumb .title {
+    position: absolute;
+    left: 40px;
+    bottom: 15px;
+    width: 50%;
+    z-index: 1;
+    font-size: 24px;
+    color: #fff;
+    line-height: 1.25;
+    margin-bottom: 0;
+}
+.pricing-thumb .net-speed {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: var(--primary-color);
+    z-index: 1;
+    border-radius: 10px 0 0 0;
+    -webkit-border-radius: 10px 0 0 0;
+    -moz-border-radius: 10px 0 0 0;
+    -ms-border-radius: 10px 0 0 0;
+    -o-border-radius: 10px 0 0 0;
+    text-align: center;
+    padding: 19px 15px;
+    min-width: 125px;
+}
+.pricing-thumb .net-speed h5 {
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+.pricing-thumb .net-speed h5 span {
+	font-size: 14px;
+	display: block;
+}
+.pricing-content {
+	border: 1px solid #E1E6EE;
+	background: #fff;
+	border-top: none;
+	border-radius: 0 0 10px 10px;
+	-webkit-border-radius: 0 0 10px 10px;
+	-moz-border-radius: 0 0 10px 10px;
+	-ms-border-radius: 0 0 10px 10px;
+	-o-border-radius: 0 0 10px 10px;
+	padding: 30px 40px;
+	transition: .3s linear;
+	-webkit-transition: .3s linear;
+	-moz-transition: .3s linear;
+	-ms-transition: .3s linear;
+	-o-transition: .3s linear;
+}
+.pricing-list li {
+	display: flex;
+	align-items: center;
+	color: var(--heading-text-color);
+	font-size: 14px;
+}
+.pricing-list li + li {
+	margin-top: 11px;
+}
+.pricing-list li img {
+	max-width: 13px;
+	margin-right: 10px;
+}
+.pricing-content .price-wrap {
+    margin: 32px 0 32px;
+}
+.price-wrap > span {
+    display: block;
+    color: var(--heading-text-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+.price-wrap .price {
+	font-size: 36px;
+	margin-bottom: 0;
+	color: var(--primary-color);
+	line-height: 1;
+}
+.price-wrap .price sub {
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: var(--heading-text-color);
+	bottom: 3px;
+	left: 5px;
+}
+.pricing-btn .btn-link {
+	color: var(--body-text-color);
+}
+.pricing-item:hover {
+	box-shadow: 0px 20px 60px rgba(42, 61, 126, 0.08);
+}
+.pricing-item:hover .pricing-content {
+	border-color: #fff;
+}
+.pricing-btn .btn-link:hover {
+	color: var(--primary-color);
+}
+.pricing-two-item {
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 30px 40px 0;
+	z-index: 1;
+	margin-bottom: 59px;
+}
+.pricing-two-item::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #0050DB;
+	opacity: .9;
+	z-index: -1;
+}
+.pricing-two-content .title {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 11px;
+}
+.pricing-two-content p {
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 0;
+}
+.pricing-two-content .price {
+	display: flex;
+	line-height: .7;
+	color: #fff;
+	font-size: 65px;
+	margin: 37px 0 42px;
+}
+.pricing-two-content .price sup {
+	top: 0;
+	align-self: flex-start;
+	font-size: 16px;
+	line-height: 1;
+}
+.pricing-two-content .price span {
+	font-size: 16px;
+	text-transform: uppercase;
+	line-height: 1.2;
+	align-self: flex-end;
+	margin-left: 8px;
+}
+.pricing-two-content .pricing-btn .btn-link {
+	color: var(--heading-text-color);
+	background: #fff;
+	border: 1px solid #E1E6EE;
+	font-size: 14px;
+	text-transform: capitalize;
+	padding: 12px 23px;
+	margin-bottom: -25px;
+}
+.pricing-two-content .pricing-btn .btn-link:hover {
+	border-color: var(--primary-color);
+	background: var(--primary-color);
+	color: #fff;
+}
+.pricing-two-area .row [class*="col-"]:nth-child(3n+1) .pricing-two-item::before {
+	background: #0050DB;
+}
+.pricing-two-area .row [class*="col-"]:nth-child(3n+2) .pricing-two-item::before {
+	background: #0C1020;
+}
+.pricing-two-area .row [class*="col-"]:nth-child(3n+3) .pricing-two-item::before {
+	background: #DF0E0E;
+}
+.pricing-two-area {
+	margin-top: -75px;
+	position: relative;
+	z-index: 1;
+}
+.pricing-three-item {
+    text-align: center;
+    border: 1px solid #E1E6EE;
+    padding: 35px 50px;
+	@media #{$xl} {
+        padding: 35px 30px;
+    }
+}
+.pricing-three-head .title {
+    font-size: 24px;
+    line-height: 1.1;
+    margin-bottom: 9px;
+}
+.pricing-three-head .devices-support {
+    display: block;
+    text-transform: uppercase;
+    line-height: 1;
+    font-size: 15px;
+    font-weight: 500;
+	color: var(--primary-color);
+}
+.devices-icon-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 26px 0 34px;
+}
+.devices-icon-wrap li {
+    color: var(--primary-color);
+    font-size: 20px;
+    line-height: 0;
+    display: flex;
+    align-items: center;
+}
+.devices-icon-wrap li::after {
+    content: "+";
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 600;
+    font-size: 22px;
+    padding: 0 10px;
+    line-height: 1;
+}
+.devices-icon-wrap li:last-child::after {
+	display: none;
+}
+.pricing-three-list {
+    text-align: left;
+}
+.pricing-three-list ul li {
+    color: var(--heading-text-color);
+    display: flex;
+    align-items: flex-start;
+}
+.pricing-three-list ul li::before {
+    content: "";
+    background-image: url(../img/icons/checkmark-fill.png);
+    width: 15px;
+    height: 15px;
+    display: block;
+    background-size: contain;
+    margin-right: 15px;
+    flex: 0 0 15px;
+    margin-top: 4.5px;
+}
+.pricing-three-list ul li + li {
+    margin-top: 15px;
+}
+.pricing-three-price {
+    display: flex;
+    font-size: 40px;
+    margin: 35px 0 40px;
+    justify-content: center;
+    line-height: .75;
+}
+.pricing-three-price > span {
+	align-self: flex-end;
+	font-weight: 400;
+	font-size: 16px;
+}
+.pricing-three-price > span:nth-child(1) {
+	margin-right: 5px;
+}
+.pricing-three-item .btn {
+    padding: 14px 27px;
+}
+
+.pricing-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 504px;
+    z-index: -1;
+    background-position: center;
+    background-size: cover;
+}
+.pricing-bg::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #0C1020;
+	opacity: .5;
+}

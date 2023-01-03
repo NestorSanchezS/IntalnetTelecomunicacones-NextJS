@@ -1,0 +1,122 @@
+/*==============================================
+08. cta
+================================================*/
+
+.cta-bg {
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	padding: 150px 0 160px;
+	z-index: 1;
+}
+.cta-bg::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #0C1020;
+	opacity: .6;
+	z-index: -1;
+}
+.white-title .title {
+	color: #fff;
+}
+.cta-btn-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+	@media #{$xxs} {
+        display: block;
+    }
+}
+.cta-btn-wrap .or {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    margin: 15px 20px 0;
+	@media #{$xxs} {
+        display: block;
+    }
+}
+.cta-btn-wrap .btn {
+    margin: 15px 0 0;
+}
+.cta-btn-wrap .transparent-btn {
+	border-color: #fff;
+	color: #fff;
+}
+.cta-btn-wrap .transparent-btn::before {
+	background: #fff;
+}
+.cta-btn-wrap .transparent-btn:hover {
+	color: var(--primary-color);
+}
+.pricing-cta-content .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.pricing-cta-content p {
+	margin-bottom: 45px;
+}
+.queries-area {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 90px;
+	padding: 110px 0 0;
+    z-index: 1;
+}
+.queries-area::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #0C1020;
+	opacity: .7;
+	z-index: -1;
+}
+.queries-form form {
+    background: #0C1020;
+    padding: 60px 80px 40px;
+    margin-bottom: -90px;
+    position: relative;
+    z-index: 1;
+}
+.queries-form form .form-grp {
+	margin-bottom: 20px;
+}
+.queries-form form input {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    font-size: 15px;
+    padding: 19px 20px;
+	color: var(--body-text-color);
+}
+.queries-form form input::placeholder {
+	font-size: 15px;
+	color: var(--body-text-color);
+}
+.queries-form form button {
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+	min-width: 200px;
+	text-align: center;
+	justify-content: center;
+}
+.queries-form form .row .col:last-child {
+    width: 230px;
+    flex: 0 0 230px;
+}

@@ -1,0 +1,117 @@
+/*==============================================
+07. team
+================================================*/
+
+.best-team-images {
+    position: relative;
+    margin-right: 30px;
+    text-align: right;
+}
+.best-team-images img {
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+}
+.best-team-images .main-img {
+	max-width: 471px;
+}
+.best-team-images .second-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    max-width: 277px;
+}
+.best-team-images .overlay-content {
+    position: absolute;
+    left: 11%;
+    bottom: 15%;
+    background: var(--primary-color);
+    margin-bottom: 0;
+    width: 203px;
+    height: 203px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+    line-height: 1.5;
+    padding: 20px;
+    font-weight: 700;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.team-item {
+	margin-bottom: 40px;
+}
+.team-thumb {
+    margin-bottom: 22px;
+}
+.team-content .title {
+    line-height: 1.1;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+.team-content .designation {
+    display: block;
+    margin-bottom: 12px;
+}
+.team-content .team-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.team-content .team-social li {
+	margin: 0 10px;
+}
+.team-content .team-social li a {
+	display: block;
+	line-height: 1;
+	color: #D0D5E1;
+}
+.team-content .team-social li a:hover {
+	color: var(--primary-color);
+}
+.hiring-bg {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    padding: 65px 80px;
+    z-index: 1;
+}
+.hiring-bg::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #0C1020;
+	opacity: .65;
+	z-index: -1;
+}
+.team-hiring-content {
+	padding-right: 50px;
+}
+.team-hiring-content .title {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 1.2;
+}
+.hiring-btn .transparent-btn {
+	color: #fff;
+	border-color: #fff;
+}
+.hiring-btn .transparent-btn:hover {
+	border-color: var(--primary-color);
+}

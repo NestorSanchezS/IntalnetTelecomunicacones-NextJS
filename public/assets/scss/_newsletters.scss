@@ -1,0 +1,122 @@
+/*==============================================
+15. newsletters
+================================================*/
+
+.subscribe-bg {
+	background-position: center;
+	background-size: cover;
+	padding: 120px 0;
+}
+.subscribe-img {
+    margin-left: -17%;
+}
+.subscribe-img img {
+	max-width: inherit;
+}
+.subscribe-content p {
+	margin-bottom: 0;
+}
+.subscribe-content .title {
+    color: var(--primary-color);
+    font-size: 24px;
+    line-height: 1.45;
+    margin-bottom: 0;
+	margin-top: 38px;
+}
+.subscribe-content .title span {
+	display: block;
+	color: var(--heading-text-color);
+	font-weight: 400;
+}
+.subscribe-plan {
+    display: flex;
+    align-items: center;
+    margin-top: 46px;
+}
+.subscribe-plan .price {
+    line-height: 1;
+    margin-bottom: 0;
+    color: var(--secondary-color);
+    font-size: 52px;
+    position: relative;
+    border: 2.5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 12px 24px;
+    margin-right: 40px;
+}
+.subscribe-plan .price span {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--heading-text-color);
+    position: absolute;
+    left: 23px;
+    top: -12px;
+    background: #F5F5F5;
+    line-height: 1;
+    padding: 2px 7px;
+    z-index: 1;
+}
+.subscribe-plan .price sub {
+    bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+	color: var(--heading-text-color);
+}
+.subscribe-plan .btn {
+	text-decoration: underline;
+}
+.subscribe-plan .btn:hover {
+	color: var(--secondary-color);
+}
+.subscribe-two-bg {
+	background-position: center;
+	background-size: cover;
+	overflow: hidden;
+	padding: 120px 0;
+}
+.subscribe-two-bg .subscribe-img {
+    margin: 50px 0 0 35px;
+	position: relative;
+}
+.subscribe-two-bg .overlay-price {
+    margin-bottom: 0;
+    position: absolute;
+    left: -35px;
+    top: -50px;
+    width: 186px;
+    height: 186px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-transform: uppercase;
+    background: var(--primary-color);
+    z-index: 1;
+    font-size: 52px;
+    line-height: 1.35;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.subscribe-two-bg .overlay-price span {
+	display: block;
+	font-size: 16px;
+}
+.subscribe-two-bg .subscribe-content p {
+	color: #fff;
+}
+.subscribe-two-bg .subscribe-content .title {
+    font-size: 30px;
+    line-height: 1.26;
+    color: #FFEE00;
+    font-weight: 700;
+    margin-bottom: 42px;
+}
+.subscribe-two-bg .subscribe-content span {
+	color: #fff;
+	font-weight: 500;
+}
