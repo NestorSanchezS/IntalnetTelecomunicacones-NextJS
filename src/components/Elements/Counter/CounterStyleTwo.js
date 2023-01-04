@@ -15,15 +15,15 @@ const CounterStyleTwo = () => {
 
     const counters = [
         {
-            countNum: 4000,
-            countTitle: 'Ultra HD Quality'
+            countNum: 7000,
+            countTitle: 'Usuarios Conectados con Nosotros'
         },
         {
-            countNum: 150,
-            countTitle: 'Online TV Channels'
+            countNum: 75,
+            countTitle: 'Canales de Televisión'
         },
         {
-            countNum : 350,
+            countNum :600,
             countTitle: 'Mbps Speed Internet'
         }
     ];

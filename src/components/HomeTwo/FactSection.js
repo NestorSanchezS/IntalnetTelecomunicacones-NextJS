@@ -16,10 +16,10 @@ const Fact = () => {
                     </div>
                     <div className="col-xl-6 col-lg-8">
                         <div className="section-title mb-40">
-                            <h2 className="title">Experience The Features Magic of Netbox</h2>
+                            <h2 className="title">Soluciones de Conectividad y Entretenimiento</h2>
                         </div>
                         <div className="video-content-wrap">
-                            <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and trouble.</p>
+                            <p>Disfruta de la mejor televisión digital del municipio. Sin clausulas de permanencia. Ofrecemos internet banda ancha y planes desde lo mas básicos hasta los más avanzados. Todo por fibra optica.</p>
                             <CounterStyleTwo />
                             <Link href="/pricing"><a className="btn transparent-btn">Try Us Free</a></Link>
                         </div>

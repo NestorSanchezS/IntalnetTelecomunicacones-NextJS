@@ -14,7 +14,7 @@ const PricingTwo = () => {
                                 <p>Que vino darte el mejor entretenimiento</p>
                                 <h3 className="price"><sup>$</sup><span> <br/></span></h3>
                                 <div className="pricing-btn">
-                                    <Link href="/pricing"><a className="btn btn-link">View Plans</a></Link>
+                                    <Link href="#"><a className="btn btn-link">Ver Planes</a></Link>
                                 </div>
                             </div>
                         </div>
@@ -26,7 +26,7 @@ const PricingTwo = () => {
                                 <p>Limited Internet with Mobile & TV</p>
                                 <h3 className="price"><sup>$</sup>90<span>From <br/> /Month</span></h3>
                                 <div className="pricing-btn">
-                                    <Link href="/pricing"><a className="btn btn-link">View Plans</a></Link>
+                                    <Link href="#"><a className="btn btn-link">Ver Planes</a></Link>
                                 </div>
                             </div>
                         </div>
@@ -38,7 +38,7 @@ const PricingTwo = () => {
                                 <p>Danos el gusto de atenderte</p>
                                 <h3 className="price"><sup></sup>4<span>Municipios <br/> /Nos encontramos</span></h3>
                                 <div className="pricing-btn">
-                                    <Link href="/pricing"><a className="btn btn-link">View Plans</a></Link>
+                                    <Link href="#"><a className="btn btn-link">Ver Planes</a></Link>
                                 </div>
                             </div>
                         </div>

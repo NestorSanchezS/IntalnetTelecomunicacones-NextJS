@@ -20,9 +20,9 @@ const ServiceTwo = () => {
                                 <i className="flaticon-internet-banking"></i>
                             </div>
                             <div className="services-content">
-                                <h3 className="title"><Link href="/service-details"><a>Broadband</a></Link></h3>
-                                <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-                                <Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+                                <h3 className="title"><Link href="/service-details"><a>Banda Ancha</a></Link></h3>
+                                <p>Ofrecemos internet banda ancha. Navegación ilimitada a bajo costo.</p>
+                                {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>
                     </div>
@@ -34,7 +34,7 @@ const ServiceTwo = () => {
                             <div className="services-content">
                                 <h3 className="title"><Link href="/service-details"><a>WIFI Internet</a></Link></h3>
                                 <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-                                <Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+                                {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>
                     </div>
@@ -46,7 +46,7 @@ const ServiceTwo = () => {
                             <div className="services-content">
                                 <h3 className="title"><Link href="/service-details"><a>Satellite TV</a></Link></h3>
                                 <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-                                <Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+                                {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>
                     </div>
@@ -58,7 +58,7 @@ const ServiceTwo = () => {
                             <div className="services-content">
                                 <h3 className="title"><Link href="/service-details"><a>Netbox TV box</a></Link></h3>
                                 <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-                                <Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+                                {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>
                     </div>

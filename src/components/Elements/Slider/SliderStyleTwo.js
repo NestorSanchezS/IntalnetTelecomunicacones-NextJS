@@ -68,7 +68,7 @@ const SliderTwo = () =>  {
                                 <div className="row">
                                     <div className="col-lg-7 col-md-9">
                                         <div className="banner-content">
-                                            <h2 className="title" data-animation="fadeInUp" data-delay=".2s" data-duration="1.2s">Television Digital  y una Gran Variedad de Contenido</h2>
+                                            <h2 className="title" data-animation="fadeInUp" data-delay=".2s" data-duration="1.2s">Televisión Digital  y una Gran Variedad de Contenido</h2>
                                             <ul className="slider-services-list">
                                                 <li data-animation="fadeInUp" data-delay=".4s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Canales de Television HD y SD.</li>
                                                 <li data-animation="fadeInUp" data-delay=".6s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Televisión Digital.</li>
