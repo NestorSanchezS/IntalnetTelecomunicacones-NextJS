@@ -35,32 +35,83 @@ const Brand = ({paddingClass}) => {
                                 }}
                             >
                             <SwiperSlide>
-                                <div className="brand-item">
+                                <div>
                                     <a href="#"><img src="assets/img/brand/brand_item01.png" alt="img not found"/></a>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
-                                <div className="brand-item">
+                                <div>
                                     <a href="#"><img src="assets/img/brand/brand_item02.png" alt="img not found"/></a>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
-                                <div className="brand-item">
+                                <div>
                                     <a href="#"><img src="assets/img/brand/brand_item03.png" alt="img not found"/></a>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
-                                <div className="brand-item">
+                                <div>
                                     <a href="#"><img src="assets/img/brand/brand_item04.png" alt="img not found"/></a>
                                 </div>
                             </SwiperSlide>
 
                             <SwiperSlide>
-                                <div className="brand-item">
+                                <div>
                                     <a href="#"><img src="assets/img/brand/brand_item05.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item06.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item07.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item08.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item09.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item10.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item11.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item12.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item13.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item14.png" alt="img not found"/></a>
+                                </div>
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <div >
+                                    <a href="#"><img src="assets/img/brand/brand_item15.png" alt="img not found"/></a>
                                 </div>
                             </SwiperSlide>
 
