@@ -26,21 +26,21 @@ const HomeTwoMain = () => {
 			<SliderTwo />
 			{/* pricing-area-end */}
 
-			{/* slider-area-start */}
+			{/* slider-banner -company-start */}
 			<PricingTwo />
-			{/* pricing-area-end */}
+			{/* slider-banner -company- */}
 
-			{/* fact-area-start */}
+			{/* solutions-conectivity - start */}
 			<Fact />
-			{/* fact-area-end */}
+			{/* solutions-conectivity - end */}
 
-			{/* fact-area-start */}
+			{/* explore our intalnet Services -start */}
 			<ServiceTwo />
-			{/* fact-area-end */}
+			{/* explore our intalnet Services -end */}
 
-			{/* fact-area-start */}
+			{/* speed test-start */}
 			<SpeacialOfferTwo />
-			{/* fact-area-end */}
+			{/* speed test - end */}
 
 			{/* fact-area-start */}
 			<Cta />

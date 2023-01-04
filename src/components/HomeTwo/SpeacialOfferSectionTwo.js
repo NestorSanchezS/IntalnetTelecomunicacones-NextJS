@@ -20,15 +20,15 @@ const SpeacialOfferTwo = () => {
                     </div>
                     <div className="col-lg-6">
                         <div className="section-title mb-40">
-                            <h2 className="title">Get Broadband Network At Very Cheap Price</h2>
+                            <h2 className="title">Realiza Test de Velocidad</h2>
                         </div>
                         <div className="special-offer-content">
-                            <p>Yes! You'll be able to use your T-Mobile Home Internet to connect your computer, phone, and numerous other devices. Gauge your students’ skill level with the initial test and follow their progress.</p>
+                            <p>Tenga en cuenta que debe cerrar todas las aplicaciones que se conecten a internet, asegurese de tener solo un computador conectado, cierre todas las venatanas del navegador que utilice.</p>
                             <div className="special-price-wrap">
-                                <h2 className="special-price"><sup>$</sup>45<sub>Monthly</sub></h2>
-                                <p className="trial-link"><i className="flaticon-satellite-dish"></i><Link href="/contact"><a>Try Free For 1 Month</a></Link></p>
+                                {/* <h2 className="special-price"><sup>$</sup>45<sub>Monthly</sub></h2>
+                                <p className="trial-link"><i className="flaticon-satellite-dish"></i><Link href="/contact"><a>Try Free For 1 Month</a></Link></p> */}
                             </div>
-                            <Link href="/pricing"><a className="btn transparent-btn">Get started</a></Link>
+                            <a href="https://www.speedtest.net/es" target="_blank"><a className="btn transparent-btn">Iniciar Test</a></a>
                         </div>
                     </div>
                 </div>
