@@ -13,6 +13,7 @@ const CounterStyleTwo = () => {
         }
     }
 
+   
     const counters = [
         {
             countNum: 7000,

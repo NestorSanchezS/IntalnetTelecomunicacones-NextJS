@@ -9,7 +9,7 @@ const ServiceTwo = () => {
                 <div className="row justify-content-center">
                     <div className="col-xl-5 col-lg-7">
                         <div className="section-title white-title text-center mb-50">
-                            <h2 className="title">Explore Our Netbox Services</h2>
+                            <h2 className="title">Explora Nuestros Servicios Intalnet</h2>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ const ServiceTwo = () => {
                             </div>
                             <div className="services-content">
                                 <h3 className="title"><Link href="/service-details"><a>WIFI Internet</a></Link></h3>
-                                <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
+                                <p>Todos los planes viene con Wi-Fi integrado, para que puedas conectar fácilmente tus dispositivos inalámbricos en tu casa.</p>
                                 {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>
@@ -44,8 +44,8 @@ const ServiceTwo = () => {
                                 <i className="flaticon-satellite-dish"></i>
                             </div>
                             <div className="services-content">
-                                <h3 className="title"><Link href="/service-details"><a>Satellite TV</a></Link></h3>
-                                <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
+                                <h3 className="title"><Link href="/service-details"><a>Canales HD y SD</a></Link></h3>
+                                <p>Disfruta de canales HD, la mejor experiencia para nuestros clientes y empleados.</p>
                                 {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>
@@ -56,8 +56,8 @@ const ServiceTwo = () => {
                                 <i className="flaticon-sync"></i>
                             </div>
                             <div className="services-content">
-                                <h3 className="title"><Link href="/service-details"><a>Netbox TV box</a></Link></h3>
-                                <p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
+                                <h3 className="title"><Link href="/service-details"><a>Televisión Digital</a></Link></h3>
+                                <p>Podrás disfrutar de canales de deportes, películas, infantiles, religiosos y mucho más.</p>
                                 {/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
                             </div>
                         </div>

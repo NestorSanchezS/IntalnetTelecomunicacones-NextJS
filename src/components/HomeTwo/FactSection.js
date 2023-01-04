@@ -21,7 +21,7 @@ const Fact = () => {
                         <div className="video-content-wrap">
                             <p>Disfruta de la mejor televisión digital del municipio. Sin clausulas de permanencia. Ofrecemos internet banda ancha y planes desde lo mas básicos hasta los más avanzados. Todo por fibra optica.</p>
                             <CounterStyleTwo />
-                            <Link href="/pricing"><a className="btn transparent-btn">Try Us Free</a></Link>
+                            <Link href="/contact"><a className="btn transparent-btn">Contactanos</a></Link>
                         </div>
                     </div>
                 </div>
