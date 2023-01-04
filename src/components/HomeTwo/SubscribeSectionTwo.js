@@ -10,7 +10,7 @@ const SubscribeTwo = () => {
                     <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                         <div className="subscribe-img wow fadeInRight" data-wow-delay=".2s">
                             <img src="assets/img/images/subscribe_img02.png" alt="img not found"/>
-                            <h2 className="overlay-price" style={{ backgroundImage: `url(${'assets/img/images/fact_img02.jpg'})`}}><span></span> <span></span></h2>
+                            {/* <h2 className="overlay-price" style={{ backgroundImage: `url(${'assets/img/images/fact_img02.jpg'})`}}><span></span> <span></span></h2> */}
                         </div>
                     </div>
                     <div className="col-xl-5 col-lg-6">

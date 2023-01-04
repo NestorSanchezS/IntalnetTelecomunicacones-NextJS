@@ -18,9 +18,10 @@ const StreamSlider = () => {
                     <div className="row">
                         <div className="col-lg-3">
                             <div className="streaming-two-title">
-                                <span className="sub-title">Now Streaming</span>
-                                <h2 className="title">Popular TV Shows</h2>
-                                <Link href="/pricing"><a className="btn transparent-btn">Go Premium</a></Link>
+                                <span className="sub-title">Ahora, el mejor sitio de películas.</span>
+                                <h2 className="title">Intalflix</h2>
+                                <p>Obten esta plataforma de películas GRATIS solo siendo parte de la familia Intalnet.</p>
+                                <Link href="http://50.0.0.20/wispflix/"><a className="btn transparent-btn" target="_blank">Ir a Plataforma</a></Link>
                             </div>
                         </div>
                         <div className="col-lg-9">
@@ -122,7 +123,7 @@ const StreamSlider = () => {
                     </div>
                 </div>
                 <div className="streaming-shape one"><img src="assets/img/images/streaming_shape01.png" alt="img not found"/></div>
-                <div className="streaming-shape two"><img src="assets/img/images/streaming_shape02.png" alt="img not found"/></div>
+                {/* <div className="streaming-shape two"><img src="assets/img/images/streaming_shape02.png" alt="img not found"/></div> */}
                 <div className="streaming-shape three"><img src="assets/img/images/streaming_shape03.png" alt="img not found"/></div>
             </section>
         </React.Fragment>
