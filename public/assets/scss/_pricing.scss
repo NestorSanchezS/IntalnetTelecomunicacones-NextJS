@@ -238,15 +238,15 @@
 }
 
 .pricing-two-area .row [class*="col-"]:nth-child(3n+1) .pricing-two-item::before {
-	background: #0050DB;
+	background: transparent;
 }
 
 .pricing-two-area .row [class*="col-"]:nth-child(3n+2) .pricing-two-item::before {
-	background: #0C1020;
+	background: transparent;
 }
 
 .pricing-two-area .row [class*="col-"]:nth-child(3n+3) .pricing-two-item::before {
-	background: #032A82;
+	background: transparent;
 }
 
 .pricing-two-area {
