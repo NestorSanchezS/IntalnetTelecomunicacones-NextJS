@@ -42,33 +42,33 @@ const HomeTwoMain = () => {
 			<SpeacialOfferTwo />
 			{/* speed test - end */}
 
-			{/* fact-area-start */}
-			<Cta />
-			{/* fact-area-end */}
+			{/* Need Fast & Secure Broandband-start */}
+			{/* <Cta /> */}
+			{/* Need Fast & Secure Broandband-end */}
 
-			{/* fact-area-start */}
-			<PricingThree />
-			{/* fact-area-end */}
+			{/* plans-start */}
+			{/* <PricingThree /> */}
+			{/* plans-end */}
 
-			{/* fact-area-start */}
+			{/* tv-start */}
 			<SubscribeTwo />
-			{/* fact-area-end */}
+			{/* tv-end */}
 
-			{/* fact-area-start */}
-			<Faq />
-			{/* fact-area-end */}
+			{/* frecuenly questions -start */}
+			{/* <Faq /> */}
+			{/* frecuenly questions -end */}
 
-			{/* stream-area-start */}
+			{/* intalflix-start */}
 			<StreamSlider />
-			{/* stream-area-end */}
+			{/* intalflix-end */}
 
-			{/* faq-area-start */}
+			{/* blog-area-start */}
 			<Blog />
-			{/* faq-area-end */}
+			{/* blog-area-end */}
 
-			{/* faq-area-start */}
+			{/* banner tv-area-start */}
 			<Brand />
-			{/* faq-area-end */}
+			{/* banner tv-area-end */}
 
 		</main>
 	);

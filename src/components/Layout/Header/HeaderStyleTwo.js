@@ -35,7 +35,7 @@ const HeaderTwo = () => {
 	return (
 		<React.Fragment>
         <Head>
-            <title>Intalnet Telecomunicacionessss</title>
+            <title>Intalnet Telecomunicaciones</title>
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         </Head>
 		<header className="header-style-two">
