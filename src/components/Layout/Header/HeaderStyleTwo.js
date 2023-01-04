@@ -35,7 +35,7 @@ const HeaderTwo = () => {
 	return (
 		<React.Fragment>
         <Head>
-            <title>Intalnet Telecomunicaciones</title>
+            <title>Intalnet Telecomunicacionessss</title>
             <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
         </Head>
 		<header className="header-style-two">
@@ -96,11 +96,11 @@ const HeaderTwo = () => {
 													<i className="fal fa-mobile-android"></i>
                                                 </div>
                                                 <div className="content">
-                                                    <span>Customer Service:</span>
-                                                    <h5 className="number"><a href="tel:123">+1 872 923 025</a></h5>
+                                                    <span>Servicio al cliente:</span>
+                                                    <h5 className="number"><a href="tel:123">+57 314 8042601    </a></h5>
                                                 </div>
                                             </li>
-                                            <li className="header-btn"><Link href="/contact"><a className="btn transparent-btn">Get a Quote</a></Link></li>
+                                            <li className="header-btn"><Link href="/contact"><a className="btn transparent-btn">Obtener cotización</a></Link></li>
                                         </ul>
                                     </div>
                                 </nav>

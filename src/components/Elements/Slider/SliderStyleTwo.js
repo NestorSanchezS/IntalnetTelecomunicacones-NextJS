@@ -48,13 +48,13 @@ const SliderTwo = () =>  {
                                 <div className="row">
                                     <div className="col-lg-7 col-md-9">
                                         <div className="banner-content">
-                                            <h2 className="title" data-animation="fadeInUp" data-delay=".2s" data-duration="1.2s">Enjoy High Speed Broadband</h2>
+                                            <h2 className="title" data-animation="fadeInUp" data-delay=".2s" data-duration="1.2s">Disfruta de la Banda Ancha a Alta Velocidad</h2>
                                             <ul className="slider-services-list">
-                                                <li data-animation="fadeInUp" data-delay=".4s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> High Speed Bandwidth Connections</li>
-                                                <li data-animation="fadeInUp" data-delay=".6s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Any Device Connectivity</li>
-                                                <li data-animation="fadeInUp" data-delay=".8s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Netbox TV Box & Satellite Live TV</li>
+                                                <li data-animation="fadeInUp" data-delay=".4s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Conexiones de ancho de banda de alta velocidad</li>
+                                                <li data-animation="fadeInUp" data-delay=".6s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Conectividad del cualquier dispositivo</li>
+                                                <li data-animation="fadeInUp" data-delay=".8s" data-duration="1.2s"><img src="assets/img/icons/w_check.png" alt="img not found"/> Canales de Television HD y SD</li>
                                             </ul>
-                                            <Link href="/contact"><a className="btn">Contact Us</a></Link>
+                                            <Link href="/contact"><a className="btn">Contactanos</a></Link>
                                         </div>
                                     </div>
                                 </div>
