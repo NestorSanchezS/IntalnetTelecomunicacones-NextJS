@@ -28,7 +28,7 @@ const SpeacialOfferTwo = () => {
                                 {/* <h2 className="special-price"><sup>$</sup>45<sub>Monthly</sub></h2>
                                 <p className="trial-link"><i className="flaticon-satellite-dish"></i><Link href="/contact"><a>Try Free For 1 Month</a></Link></p> */}
                             </div>
-                            <a href="https://www.speedtest.net/es" target="_blank"><a className="btn transparent-btn">Iniciar Test</a></a>
+                            <a href="https://www.speedtest.net/es" target="_blank" className="btn transparent-btn">Iniciar Test</a>
                         </div>
                     </div>
                 </div>
