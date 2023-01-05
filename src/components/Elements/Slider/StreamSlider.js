@@ -56,11 +56,11 @@ const StreamSlider = () => {
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
                                                     <img src="assets/img/images/s_streaming_img01.jpg" alt="img not found"/>
-                                                    <span className="tag">TV Serial</span>
+                                                    <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
-                                                    <span>Entertainment</span>
-                                                    <h4 className="title"><Link href="/service-details"><a>Martin's Family Show</a></Link></h4>
+                                                    <span>Entretenimiento</span>
+                                                    <h4 className="title"><Link href="/service-details"><a>Mercenarios de Élite</a></Link></h4>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -69,11 +69,11 @@ const StreamSlider = () => {
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
                                                     <img src="assets/img/images/s_streaming_img02.jpg" alt="img not found"/>
-                                                    <span className="tag">Live</span>
+                                                    <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
-                                                    <span>Sports</span>
-                                                    <h4 className="title"><Link href="/service-details"><a>World Cup Football</a></Link></h4>
+                                                    <span>Entretenimiento</span>
+                                                    <h4 className="title"><Link href="/service-details"><a>Código Banshee</a></Link></h4>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -82,11 +82,11 @@ const StreamSlider = () => {
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
                                                     <img src="assets/img/images/s_streaming_img03.jpg" alt="img not found"/>
-                                                    <span className="tag">Music Song</span>
+                                                    <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
-                                                    <span>Sports</span>
-                                                    <h4 className="title"><Link href="/service-details"><a>World Music America</a></Link></h4>
+                                                    <span>Entretenimiento</span>
+                                                    <h4 className="title"><Link href="/service-details"><a>Forever Rich</a></Link></h4>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
@@ -95,27 +95,16 @@ const StreamSlider = () => {
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
                                                     <img src="assets/img/images/s_streaming_img04.jpg" alt="img not found"/>
-                                                    <span className="tag">Cartoon</span>
+                                                    <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
-                                                    <span>Kids Cartoon</span>
-                                                    <h4 className="title"><Link href="/service-details"><a>Hottoka berry Cartoon</a></Link></h4>
+                                                    <span>Entretenimiento</span>
+                                                    <h4 className="title"><Link href="/service-details"><a>Security</a></Link></h4>
                                                 </div>
                                             </div>
                                         </SwiperSlide>
 
-                                        <SwiperSlide>
-                                            <div className="streaming-two-item swiper-slide">
-                                                <div className="streaming-two-thumb">
-                                                    <img src="assets/img/images/s_streaming_img01.jpg" alt="img not found"/>
-                                                    <span className="tag">TV Serial</span>
-                                                </div>
-                                                <div className="streaming-two-content">
-                                                    <span>Entertainment</span>
-                                                    <h4 className="title"><Link href="/service-details"><a>Martin's Family Show</a></Link></h4>
-                                                </div>
-                                            </div>
-                                        </SwiperSlide>
+                                      
                                     </Swiper>
                                 </div>
                             </div>

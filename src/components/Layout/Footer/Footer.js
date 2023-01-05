@@ -18,7 +18,7 @@ const Footer = () => {
                                         </div>
                                         <div className="content">
                                             <span>Montería - Córdoba</span>
-                                            <h6 className="title"><a href="tel:123">(+51) 301 5168800</a></h6>
+                                            <h6 className="title"><a href="tel:123">(+51) 314 8042601</a></h6>
                                         </div>
                                     </div>
                                     <div className="footer-call">
@@ -27,7 +27,7 @@ const Footer = () => {
                                         </div>
                                         <div className="content">
                                             <span>Tierralta - Córdoba</span>
-                                            <h6 className="title"><a href="tel:123">(+51) 320 4013011</a></h6>
+                                            <h6 className="title"><a href="tel:123">(+51) 311 3934218</a></h6>
                                         </div>
                                     </div>
                                     <div className="footer-call">
@@ -62,40 +62,39 @@ const Footer = () => {
                         <div className="col-2">
                             <div className="footer-widget">
                                 <div className="fw-title">
-                                    <h4 className="title">Categories</h4>
+                                    <h4 className="title">Visitanos</h4>
                                 </div>
                                 <ul className="fw-list">
-                                    <li><Link href="/service-details"><a>Laptops & Computers</a></Link></li>
-                                    <li><Link href="/service-details"><a>Home & Life Style</a></Link></li>
-                                    <li><Link href="/service-details"><a>Men's Fashion</a></Link></li>
-                                    <li><Link href="/service-details"><a>Women's Fashion</a></Link></li>
-                                    <li><Link href="/service-details"><a>Sport & Gyms</a></Link></li>
+                                    <li><a>Cr. 25 No. 23-74 Calle  la Pradera.<strong> Montería</strong></a></li>
+                                    <li><a>Cr. 13 # 5-31 Barrio El Prado. <strong>Tierralta</strong> </a></li>
+                                    <li><a>Carrera 14 # 12-26 Barrio Centro. <strong>Valencia</strong>  </a></li>
+                                    <li><a>Media cuadra del parque princpal. <strong>Los Córdoba</strong></a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-2">
                             <div className="footer-widget">
                                 <div className="fw-title">
-                                    <h4 className="title">About Company</h4>
+                                    <h4 className="title">Servicios</h4>
                                 </div>
                                 <ul className="fw-list">
-                                    <li><Link href="/about"><a>About Company</a></Link></li>
-                                    <li><Link href="/contact"><a>Contact Us</a></Link></li>
-                                    <li><Link href="/contact"><a>Privacy policy</a></Link></li>
-                                    <li><Link href="/contact"><a>Terms & Conditions</a></Link></li>
-                                    <li><Link href="/contact"><a>Mission & Vision</a></Link></li>
+                                    <li><a>Canales Full HD.</a></li>
+                                    <li><a>Internet Dedicado.</a></li>
+                                    <li><a>Interbet de Alta Velocidad.</a></li>
+                                    <li><a>Fibra Optica.</a></li>
+                                    <li><a>Accesorios de Tecnologia.</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-1">
                             <div className="footer-widget">
                                 <div className="fw-title">
-                                    <h4 className="title">Service Schedule</h4>
+                                    <h4 className="title">Horario de apertura:</h4>
                                 </div>
                                 <ul className="fw-schedule-list">
-                                    <li>Saturday - Sunday - Mon <span>8:30 AM - 10 PM</span></li>
-                                    <li>Tuesday - Wed - Thurs <span>9:30 AM - 12 PM</span></li>
-                                    <li>Friday : <span className="close">Closed</span></li>
+                                    <li>Saturday - Lunes - Viernes <span>8:00 AM - 12:00 PM & 2:00 PM - 6:00 PM</span></li>
+                                    <li>Sábados<span>8:00 AM - 12:00 PM</span></li>
+                                    <li>Domingos & Festivos : <span className="close">Cerrado</span></li>
                                 </ul>
                             </div>
                         </div>
