@@ -61,7 +61,7 @@ const HeaderTwo = () => {
                                                 </ul> */}
                                             </li>
                                             <li><Link href="/about"><a>Nuestra empresa</a></Link></li>
-                                            <li className="menu-item-has-children"><Link href="/services"><a>Services</a></Link>
+                                            <li className="menu-item-has-children"><Link href="/services"><a>Plane por sedes</a></Link>
                                                 <ul className="sub-menu">
                                                     <li><Link href="/services"><a>Our Services</a></Link></li>
                                                     <li><Link href="/service-details"><a>Services Details</a></Link></li>
@@ -83,7 +83,7 @@ const HeaderTwo = () => {
                                                     <li><Link href="/blog-details"><a>News Details</a></Link></li>
                                                 </ul>
                                             </li>
-                                            <li><Link href="/contact"><a>Contact</a></Link></li>
+                                            <li><Link href="/contact"><a>Contactanos</a></Link></li>
                                         </ul>
                                     </div>
                                     <div className="header-action d-none d-md-block">
