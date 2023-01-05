@@ -1,17 +1,17 @@
 import React from 'react';
+import Header from '../components/Layout/Header/Header';
 import Footer from '../components/Layout/Footer/Footer';
-import HomeTwoMain from '../components/HomeTwo/HomeTwoMain';
-import HeaderTwo from '../components/Layout/Header/HeaderStyleTwo';
+import HomeMain from '../components/Home/HomeMain';
 
-const HomeTwo = () => {
+const Index = () => {
     return (
         <React.Fragment>
-            <HeaderTwo />
-            <HomeTwoMain />
+            <Header />
+            <HomeMain />
             <Footer />
         </React.Fragment>
     );
 };
 
-export default HomeTwo;
+export default Index;
 
