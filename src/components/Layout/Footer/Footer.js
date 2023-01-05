@@ -17,16 +17,43 @@ const Footer = () => {
                                             <i className="flaticon-support"></i>
                                         </div>
                                         <div className="content">
-                                            <span>Call us 24/7</span>
-                                            <h6 className="title"><a href="tel:123">(987) 547587587</a></h6>
+                                            <span>Montería - Córdoba</span>
+                                            <h6 className="title"><a href="tel:123">(+51) 301 5168800</a></h6>
                                         </div>
                                     </div>
-                                    <h6 className="title">Contact info</h6>
-                                    <p>Street House, Greater London NW1 8JR, UK</p>
+                                    <div className="footer-call">
+                                        <div className="icon">
+                                            <i className="flaticon-support"></i>
+                                        </div>
+                                        <div className="content">
+                                            <span>Tierralta - Córdoba</span>
+                                            <h6 className="title"><a href="tel:123">(+51) 320 4013011</a></h6>
+                                        </div>
+                                    </div>
+                                    <div className="footer-call">
+                                        <div className="icon">
+                                            <i className="flaticon-support"></i>
+                                        </div>
+                                        <div className="content">
+                                            <span>Valencia - Córdoba</span>
+                                            <h6 className="title"><a href="tel:123">(+51) 315 2522215</a></h6>
+                                        </div>
+                                    </div>
+                                    <div className="footer-call">
+                                        <div className="icon">
+                                            <i className="flaticon-support"></i>
+                                        </div>
+                                        <div className="content">
+                                            <span>Los Córdoba - córdoba</span>
+                                            <h6 className="title"><a href="tel:123">(+51) 314 8030478</a></h6>
+                                        </div>
+                                    </div>
+                                    {/* <h6 className="title">Contact info</h6>
+                                    <p>Street House, Greater London NW1 8JR, UK</p> */}
                                     <div className="footer-social">
                                         <a href="#" target="_blank"><i className="fab fa-twitter"></i></a>
-                                        <a href="#" target="_blank"><i className="fab fa-facebook-f"></i></a>
-                                        <a href="#" target="_blank"><i className="fab fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/profile.php?id=100064053851230" target="_blank"><i className="fab fa-facebook-f"></i></a>
+                                        <a href="https://www.instagram.com/intalnet_telecomunicaciones/" target="_blank"><i className="fab fa-instagram"></i></a>
                                         <a href="#" target="_blank"><i className="fab fa-linkedin-in"></i></a>
                                     </div>
                                 </div>

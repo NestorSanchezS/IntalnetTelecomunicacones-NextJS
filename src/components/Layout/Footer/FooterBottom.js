@@ -8,12 +8,12 @@ const FooterBottom = () => {
                 <div className="row align-items-center">
                     <div className="col-md-4">
                         <div className="footer-logo">
-                            <Link href="/"><a><img src="assets/img/logo/w_logo.png" alt="img not found"/></a></Link>
+                            <Link href="/home-2"><a><img src="assets/img/logo/fw_logo.png" alt="img not found"/></a></Link>
                         </div>
                     </div>
                     <div className="col-md-8">
                         <div className="copyright-text text-center text-md-end">
-                            <p>Copyrighted by @Bdevs - All Right Reserved</p>
+                            <p>Copyrighted 2023_INTALNET - Desarollado por Néstor Sánchez</p>
                         </div>
                     </div>
                 </div>
