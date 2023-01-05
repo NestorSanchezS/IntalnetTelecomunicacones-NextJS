@@ -80,7 +80,7 @@ const Footer = () => {
                                 <ul className="fw-list">
                                     <li><a>Canales Full HD.</a></li>
                                     <li><a>Internet Dedicado.</a></li>
-                                    <li><a>Interbet de Alta Velocidad.</a></li>
+                                    <li><a>Internet de Alta Velocidad.</a></li>
                                     <li><a>Fibra Optica.</a></li>
                                     <li><a>Accesorios de Tecnologia.</a></li>
                                 </ul>
