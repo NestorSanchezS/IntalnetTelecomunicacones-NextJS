@@ -50,11 +50,11 @@ const HeaderTwo = () => {
                             <div className="menu-wrap">
                                 <nav className="menu-nav">
                                     <div className="logo">
-                                        <Link href="/home-2"><a><img src="assets/img/logo/logo.png" alt="img not found"/></a></Link>
+                                        <Link href="/"><a><img src="assets/img/logo/logo.png" alt="img not found"/></a></Link>
                                     </div>
                                     <div className="navbar-wrap navbar-wrap-two main-menu d-none d-lg-flex">
                                         <ul className="navigation">
-                                            <li><Link href="/home-2"><a>Inicio</a></Link>
+                                            <li><Link href="/"><a>Inicio</a></Link>
                                                 {/* <ul className="sub-menu">
                                                     <li><Link href="/"><a>Home One</a></Link></li>
                                                     <li><Link href="/home-2"><a>Home Two</a></Link></li>

@@ -8,7 +8,7 @@ const FooterBottom = () => {
                 <div className="row align-items-center">
                     <div className="col-md-4">
                         <div className="footer-logo">
-                            <Link href="/home-2"><a><img src="assets/img/logo/fw_logo.png" alt="img not found"/></a></Link>
+                            <Link href="/"><a><img src="assets/img/logo/fw_logo.png" alt="img not found"/></a></Link>
                         </div>
                     </div>
                     <div className="col-md-8">

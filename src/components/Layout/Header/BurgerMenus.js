@@ -54,7 +54,7 @@ const BurgerMenus = ({setMenuOpen, menuOpen}) => {
                           <a onClick={() => { openMobileMenu('home'); }}>Home</a>
                           <ul className={home ? "sub-menu active" : "sub-menu"}>
                               <li><Link href="/"><a>Home Style 1</a></Link></li>
-                              <li><Link href="/home-2"><a>Home Style 2</a></Link></li>
+                              <li><Link href="/"><a>Home Style 2</a></Link></li>
                           </ul>
                       </li>
                       <li><Link href="/about"><a>About</a></Link></li>
