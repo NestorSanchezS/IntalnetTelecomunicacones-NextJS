@@ -56,9 +56,9 @@ const ServiceMain = () => {
 									<i className="flaticon-internet-banking"></i>
 								</div>
 								<div className="services-content">
-									<h3 className="title"><Link href="/service-details"><a>Broadband</a></Link></h3>
-									<p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-									<Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+									<h3 className="title"><Link href="/service-details"><a>Banda Ancha</a></Link></h3>
+									<p>Ofrecemos internet banda ancha. Navegación ilimitada a bajo costo.</p>
+									{/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
 								</div>
 							</div>
 						</div>
@@ -68,9 +68,9 @@ const ServiceMain = () => {
 									<i className="flaticon-wifi-router"></i>
 								</div>
 								<div className="services-content">
-									<h3 className="title"><Link href="/service-details"><a>WIFI Internet</a></Link></h3>
-									<p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-									<Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+									<h3 className="title"><Link href="/service-details"><a>WiFi Internet</a></Link></h3>
+									<p>Todos los planes viene con Wi-Fi integrado, para que puedas conectar fácilmente tus dispositivos inalámbricos en tu casa.</p>
+									{/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
 								</div>
 							</div>
 						</div>
@@ -80,9 +80,9 @@ const ServiceMain = () => {
 									<i className="flaticon-satellite-dish"></i>
 								</div>
 								<div className="services-content">
-									<h3 className="title"><Link href="/service-details"><a>Satellite TV</a></Link></h3>
-									<p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-									<Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+									<h3 className="title"><Link href="/service-details"><a>Canales HD y SD</a></Link></h3>
+									<p>Disfruta de canales HD, la mejor experiencia para nuestros clientes y empleados.</p>
+									{/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
 								</div>
 							</div>
 						</div>
@@ -92,9 +92,9 @@ const ServiceMain = () => {
 									<i className="flaticon-sync"></i>
 								</div>
 								<div className="services-content">
-									<h3 className="title"><Link href="/service-details"><a>Netbox TV box</a></Link></h3>
-									<p>Many desktop Wifi packages and web page editors now use Lorem Ipsum budgets</p>
-									<Link href="/service-details"><a className="btn btn-link">Read more</a></Link>
+									<h3 className="title"><Link href="/service-details"><a>Televisión Digital</a></Link></h3>
+									<p>Podrás disfrutar de canales de deportes, películas, infantiles, religiosos y mucho más.</p>
+									{/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
 								</div>
 							</div>
 						</div>

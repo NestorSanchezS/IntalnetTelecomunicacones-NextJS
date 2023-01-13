@@ -20,15 +20,15 @@ const ServiceThree = () => {
                         </div>
                         <div className="col-xl-5 col-lg-6">
                             <div className="section-title mb-30">
-                                <h2 className="title">Find Perfect Network Solutions From Us</h2>
+                                <h2 className="title">Encuentra Las Mejores Soluciones de Red con Nosotros</h2>
                             </div>
                             <div className="services-inner-content">
-                                <p>Home Internet to connect your computer, phone, and other devices in your home simultaneously.</p>
+                                <p>Internet residencial para conectar su computadora, celular y otros dispositivos en su hogar simultáneamente</p>
                                 <ul className="services-inner-list">
-                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> We ensure quality service</li>
-                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> 24/7 VIP support</li>
-                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Skilled technical team</li>
-                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Free internet in new connection</li>
+                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Garantizamos un servicio de calidad.</li>
+                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Equipo Técnico Expecializado.</li>
+                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Tecnologia Avanzada</li>
+                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Internet Por Fibra Optica.</li>
                                 </ul>
                             </div>
                         </div>
