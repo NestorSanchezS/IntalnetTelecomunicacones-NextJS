@@ -19,9 +19,9 @@ const Streaming = () => {
                                     <li>
                                         <div className="streaming-item">
                                             <div className="streaming-thumb">
-                                                <img src="assets/img/images/streaming_img01.jpg" alt="img not found"/>
+                                                <img src="/assets/img/images/streaming_img01.jpg" alt="img not found"/>
                                                 <span className="tag">Music Song</span>
-                                                <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="popup-video"><i className="fas fa-play"></i></a>
+                                                <a href="https://www.youtube.com/watch?v=R5ARkEAhI-k" className="popup-video"><i className="fas fa-play"></i></a>
                                             </div>
                                             <div className="streaming-content">
                                                 <span className="category">Fashion & Life Style</span>
@@ -46,9 +46,9 @@ const Streaming = () => {
                                     <li>
                                         <div className="streaming-item">
                                             <div className="streaming-thumb">
-                                                <img src="assets/img/images/streaming_img02.jpg" alt="img not found"/>
+                                                <img src="/assets/img/images/streaming_img02.jpg" alt="img not found"/>
                                                 <span className="tag">Live</span>
-                                                <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="popup-video"><i className="fas fa-play"></i></a>
+                                                <a href="https://www.youtube.com/watch?v=R5ARkEAhI-k" className="popup-video"><i className="fas fa-play"></i></a>
                                             </div>
                                             <div className="streaming-content">
                                                 <span className="category">Fashion & Life Style</span>
@@ -73,9 +73,9 @@ const Streaming = () => {
                                     <li>
                                         <div className="streaming-item">
                                             <div className="streaming-thumb">
-                                                <img src="assets/img/images/streaming_img03.jpg" alt="img not found"/>
+                                                <img src="/assets/img/images/streaming_img03.jpg" alt="img not found"/>
                                                 <span className="tag">Tv Show</span>
-                                                <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="popup-video"><i className="fas fa-play"></i></a>
+                                                <a href="https://www.youtube.com/watch?v=R5ARkEAhI-k" className="popup-video"><i className="fas fa-play"></i></a>
                                             </div>
                                             <div className="streaming-content">
                                                 <span className="category">Fashion & Life Style</span>
@@ -100,9 +100,9 @@ const Streaming = () => {
                                     <li>
                                         <div className="streaming-item">
                                             <div className="streaming-thumb">
-                                                <img src="assets/img/images/streaming_img04.jpg" alt="img not found"/>
+                                                <img src="/assets/img/images/streaming_img04.jpg" alt="img not found"/>
                                                 <span className="tag">TV Serial</span>
-                                                <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="popup-video"><i className="fas fa-play"></i></a>
+                                                <a href="https://www.youtube.com/watch?v=R5ARkEAhI-k" className="popup-video"><i className="fas fa-play"></i></a>
                                             </div>
                                             <div className="streaming-content">
                                                 <span className="category">Fashion & Life Style</span>
@@ -118,7 +118,7 @@ const Streaming = () => {
                                                 <div className="streaming-time">
                                                     <p>fri - mon <span>9:30</span> PM</p>
                                                     <div className="stream-logo">
-                                                        <img src="assets/img/images/stream_logo.png.png" alt="img not found"/>
+                                                        <img src="/assets/img/images/stream_logo.png.png" alt="img not found"/>
                                                     </div>
                                                 </div>
                                             </div>
@@ -129,7 +129,7 @@ const Streaming = () => {
                                             <div className="streaming-thumb">
                                                 <img src="assets/img/images/streaming_img05.jpg" alt="img not found"/>
                                                 <span className="tag">Cartoon Show</span>
-                                                <a href="https://www.youtube.com/watch?v=XHOmBV4js_E" className="popup-video"><i className="fas fa-play"></i></a>
+                                                <a href="https://www.youtube.com/watch?v=R5ARkEAhI-k" className="popup-video"><i className="fas fa-play"></i></a>
                                             </div>
                                             <div className="streaming-content">
                                                 <span className="category">Fashion & Life Style</span>
@@ -145,7 +145,7 @@ const Streaming = () => {
                                                 <div className="streaming-time">
                                                     <p>fri - mon <span>9:30</span> PM</p>
                                                     <div className="stream-logo">
-                                                        <img src="assets/img/images/stream_logo.png.png" alt="img not found"/>
+                                                        <img src="/assets/img/images/stream_logo.png.png" alt="img not found"/>
                                                     </div>
                                                 </div>
                                             </div>

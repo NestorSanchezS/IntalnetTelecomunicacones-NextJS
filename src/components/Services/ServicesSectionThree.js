@@ -11,8 +11,8 @@ const ServiceThree = () => {
                     <div className="row align-items-center">
                         <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
                             <div className="services-inner-img wow fadeInRight" data-wow-delay=".2s">
-                                <img src="/assets/img/images/in_services_img.jpg" alt="img not found"/>
-                                <ModalVideo channel='youtube' isOpen={isOpen} videoId='mSEYTJZ4N_c' onClose={() => { openVideoModal(); }} />
+                                <img src="/assets/img/images/pricing_item_bg01.jpg" alt="img not found"/>
+                                <ModalVideo channel='youtube' isOpen={isOpen} videoId='R5ARkEAhI-k' onClose={() => { openVideoModal(); }} />
                                 <div className="video-paly">
                                     <a href="#!" className="popup-video" onClick={() => { openVideoModal(); }}> <i className="fas fa-play"></i> </a>
                                 </div>
