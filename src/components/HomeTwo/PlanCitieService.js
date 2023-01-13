@@ -1,10 +1,11 @@
 import React from 'react'
+import { TypeServiceInPlan } from './TypeServiceInPlan'
 
 export const PlanCitieService = ({plane}) => {
-    console.log(plane)
     const {name, price, services } = plane;
     const getNameBandwidth =  services.find(service => service.type === 'bandwidth');
-    
+    const getTypeService = services.filter((typeservice) => typeservice.type != 'bandwidth')
+
   return (
     <>
         <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
@@ -21,11 +22,7 @@ export const PlanCitieService = ({plane}) => {
                 </div>
                 <div className="pricing-three-list">
                     <ul>
-                        <li>Home broadband</li>
-                        <li>Satellite TV</li>
-                        <li>Cell phone connection</li>
-                        <li>Home security</li>
-                        <li>Home broadband</li>
+                       { getTypeService.map((typeservice) => <TypeServiceInPlan key={typeservice.id} typeservice={typeservice}/>)}
                     </ul>
                 </div>
                 <h2 className="pricing-three-price"><span>Desde</span> {price}<span>/mil</span></h2>

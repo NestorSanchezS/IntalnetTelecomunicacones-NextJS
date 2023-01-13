@@ -112,6 +112,7 @@ const PricingThree = ({plans}) => {
                             <Link href="/pricing"><a className="btn transparent-btn">Get Started</a></Link>
                         </div>
                     </div> */}
+                    <Link href="/pricing"><a className="btn transparent-btn">Get Started</a></Link>
                 </div>
             </div>
         </section>

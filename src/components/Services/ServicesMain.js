@@ -19,7 +19,7 @@ const ServiceMain = () => {
 		if(!router.query.id){
 			return
 		}
-		console.log("--ID:" + router.query.id)
+		// console.log("--ID:" + router.query.id)
 		const getInfoServiceCities = async () => {
 		 try {
 			const url = `${BASE_URL}cities/${router.query.id}`;
