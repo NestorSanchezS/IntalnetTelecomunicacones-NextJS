@@ -35,7 +35,7 @@ const ShopDetailsMain = () => {
                     <div className="row">
                         <div className="col-lg-6">
                             <div className="shop-details-img">
-                                <img src="assets/img/products/shop_details01.png" alt="img not found"/>
+                                <img src="/assets/img/products/shop_details01.png" alt="img not found"/>
                             </div>
                         </div>
                         <div className="col-lg-6">

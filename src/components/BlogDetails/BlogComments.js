@@ -10,7 +10,7 @@ const BlogComments = () => {
             <ul className="blog-comment-list">
                 <li className="blog-comment-item">
                     <div className="comment-avatar-thumb">
-                        <img src="assets/img/blog/comment_thumb01.jpg" alt="img not found"/>
+                        <img src="/assets/img/blog/comment_thumb01.jpg" alt="img not found"/>
                     </div>
                     <div className="comment-text">
                         <div className="comment-avatar-info">
@@ -26,7 +26,7 @@ const BlogComments = () => {
                 </li>
                 <li className="blog-comment-item children">
                     <div className="comment-avatar-thumb">
-                        <img src="assets/img/blog/comment_thumb02.jpg" alt="img not found"/>
+                        <img src="/assets/img/blog/comment_thumb02.jpg" alt="img not found"/>
                     </div>
                     <div className="comment-text">
                         <div className="comment-avatar-info">
@@ -42,7 +42,7 @@ const BlogComments = () => {
                 </li>
                 <li className="blog-comment-item">
                     <div className="comment-avatar-thumb">
-                        <img src="assets/img/blog/comment_thumb03.jpg" alt="img not found"/>
+                        <img src="/assets/img/blog/comment_thumb03.jpg" alt="img not found"/>
                     </div>
                     <div className="comment-text">
                         <div className="comment-avatar-info">

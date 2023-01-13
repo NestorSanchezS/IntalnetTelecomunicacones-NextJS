@@ -3,7 +3,7 @@ import React from 'react';
 const Queries = () => {
 
     return (
-        <section className="queries-area" style={{ backgroundImage:`url(${'assets/img/bg/queries_bg.jpg'})`}}>
+        <section className="queries-area" style={{ backgroundImage:`url(${'/assets/img/bg/queries_bg.jpg'})`}}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-7 col-lg-8">

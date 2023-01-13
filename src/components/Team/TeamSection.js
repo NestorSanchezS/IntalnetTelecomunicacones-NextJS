@@ -17,7 +17,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img01.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img01.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Brandon Tailor</h4>
@@ -34,7 +34,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img02.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img02.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Daniel Brayan Hamel</h4>
@@ -51,7 +51,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img03.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img03.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Shane Decruse</h4>
@@ -68,7 +68,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img04.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img04.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Nikole Haraf Badol</h4>
@@ -85,7 +85,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img05.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img05.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">John Schrimsher</h4>
@@ -102,7 +102,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img06.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img06.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Charles Bradford</h4>
@@ -119,7 +119,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img07.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img07.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Elizabeth Paulsen</h4>
@@ -136,7 +136,7 @@ const Team = () => {
                     <div className="col-xl-3 col-lg-4 col-sm-6">
                         <div className="team-item text-center">
                             <div className="team-thumb">
-                                <img src="assets/img/team/team_img08.jpg" alt="img not found"/>
+                                <img src="/assets/img/team/team_img08.jpg" alt="img not found"/>
                             </div>
                             <div className="team-content">
                                 <h4 className="title">Thomas Deloach</h4>

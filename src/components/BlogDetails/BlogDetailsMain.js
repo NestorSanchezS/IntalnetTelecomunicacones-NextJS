@@ -26,7 +26,7 @@ const BlogDetailsMain = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="blog-details-thumb">
-                            <img src="assets/img/blog/blog_details01.jpg" alt="img not found"/>
+                            <img src="/assets/img/blog/blog_details01.jpg" alt="img not found"/>
                         </div>
                     </div>
                     
@@ -49,7 +49,7 @@ const BlogDetailsMain = () => {
                                         <div className="row">
                                             <div className="col-xl-6 col-lg-12 col-md-7">
                                                 <div className="blog-details-img">
-                                                    <img src="assets/img/blog/blog_details02.jpg" alt="img not found"/>
+                                                    <img src="/assets/img/blog/blog_details02.jpg" alt="img not found"/>
                                                 </div>
                                             </div>
                                             <div className="col-xl-6 col-lg-12 col-md-5">

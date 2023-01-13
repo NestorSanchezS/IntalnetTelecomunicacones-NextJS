@@ -47,7 +47,7 @@ const Header = () => {
 								<div className="menu-wrap">
 									<nav className="menu-nav">
 										<div className="logo">
-											<Link href="/"><a><img src="assets/img/logo/logo.png" alt="img not found"/></a></Link>
+											<Link href="/"><a><img src="/assets/img/logo/logo.png" alt="img not found"/></a></Link>
 										</div>
 										<div className="navbar-wrap main-menu d-none d-lg-flex">
 											<ul className="navigation">

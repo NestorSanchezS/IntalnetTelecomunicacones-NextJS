@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Banner = () => {
 
     return (
-        <section className="banner-area banner-bg" style={{ backgroundImage:`url(${'assets/img/slider/banner_bg.jpg'})`}}>
+        <section className="banner-area banner-bg" style={{ backgroundImage:`url(${'/assets/img/slider/banner_bg.jpg'})`}}>
             <div className="container">
                 <div className="row">
                     <div className="col-xl-5 col-lg-6 col-md-9">

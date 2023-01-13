@@ -8,8 +8,8 @@ const PricingSection = () => {
                     <div className="row align-items-center">
                         <div className="col-lg-6">
                             <div className="best-team-images">
-                                <img src="assets/img/images/best_team01.png" className="main-img" alt="img not found"/>
-                                <img src="assets/img/images/best_team02.png" className="second-img" alt="img not found"/>
+                                <img src="/assets/img/images/best_team01.png" className="main-img" alt="img not found"/>
+                                <img src="/assets/img/images/best_team02.png" className="second-img" alt="img not found"/>
                                 <h4 className="overlay-content">We Are <br/> The Best Team Ever</h4>
                             </div>
                         </div>

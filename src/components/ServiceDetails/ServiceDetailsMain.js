@@ -40,14 +40,14 @@ const ServiceDetailsMain = () => {
                                         <h5 className="title"><span>Download</span></h5>
                                         <ul className="services-doc-list">
                                             <li>
-                                                <div className="icon"><img src="assets/img/icons/pdf.png" alt="img not found"/></div>
+                                                <div className="icon"><img src="/assets/img/icons/pdf.png" alt="img not found"/></div>
                                                 <div className="content">
                                                     <h6 className="title"><a href="#">Service Brochure</a></h6>
                                                     <span>PDF <small>|</small> 13 MB</span>
                                                 </div>
                                             </li>
                                             <li>
-                                                <div className="icon"><img src="assets/img/icons/doc.png" alt="img not found"/></div>
+                                                <div className="icon"><img src="/assets/img/icons/doc.png" alt="img not found"/></div>
                                                 <div className="content">
                                                     <h6 className="title"><a href="#">Company Profile</a></h6>
                                                     <span>Word <small>|</small> 25 MB</span>
@@ -59,7 +59,7 @@ const ServiceDetailsMain = () => {
                             </div>
                             <div className="col-8">
                                 <div className="services-details-img">
-                                    <img src="assets/img/images/services_details01.jpg" alt="img not found"/>
+                                    <img src="/assets/img/images/services_details01.jpg" alt="img not found"/>
                                 </div>
                                 <div className="services-details-content">
                                     <h2 className="title">Broadband Connection Setup</h2>
@@ -69,18 +69,18 @@ const ServiceDetailsMain = () => {
                                             <div className="col-xl-6 col-md-7">
                                                 <p>From oil changes, filter replacements, and fluid flushes to brakes and brake repair, shocks and struts, muffler repair, tires, and wheel alignment.</p>
                                                 <div className="services-chart">
-                                                    <img src="assets/img/images/services_chart.svg" alt="img not found"/>
+                                                    <img src="/assets/img/images/services_chart.svg" alt="img not found"/>
                                                 </div>
                                                 <ul className="services-growth-list">
-                                                    <li><img src="assets/img/icons/check.png" alt="img not found"/> Single Device Uses</li>
-                                                    <li><img src="assets/img/icons/check.png" alt="img not found"/> Internet Connection</li>
-                                                    <li><img src="assets/img/icons/check.png" alt="img not found"/> Phone & Computer</li>
-                                                    <li><img src="assets/img/icons/check.png" alt="img not found"/> Broadband Success</li>
+                                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Single Device Uses</li>
+                                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Internet Connection</li>
+                                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Phone & Computer</li>
+                                                    <li><img src="/assets/img/icons/check.png" alt="img not found"/> Broadband Success</li>
                                                 </ul>
                                             </div>
                                             <div className="col-xl-6 col-md-5">
                                                 <div className="services-details-video">
-                                                    <img src="assets/img/images/services_details02.jpg" alt="img not found"/>
+                                                    <img src="/assets/img/images/services_details02.jpg" alt="img not found"/>
                                                     <ModalVideo channel='youtube' isOpen={isOpen} videoId='Cft-FZ3HiGI' onClose={() => { openVideoModal(); }} />
                                                     <div className="video-paly">
                                                         <a href="#!" className="popup-video" onClick={() => { openVideoModal(); }}> <i className="fas fa-play"></i> </a>

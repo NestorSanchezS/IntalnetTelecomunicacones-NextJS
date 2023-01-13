@@ -9,8 +9,8 @@ const About = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6">
                         <div className="about-img-wrap">
-                            <img src="assets/img/images/about_img01.jpg" alt="img not found"/>
-                            <img src="assets/img/images/about_img02.jpg" className="main-img" alt="img not found"/>
+                            <img src="/assets/img/images/about_img01.jpg" alt="img not found"/>
+                            <img src="/assets/img/images/about_img02.jpg" className="main-img" alt="img not found"/>
                         </div>
                     </div>
                     <div className="col-lg-6">

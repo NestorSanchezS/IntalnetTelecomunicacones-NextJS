@@ -70,7 +70,7 @@ const Faq = () => {
                                 <p>Home Internet customers that did not provide an email address for service notifications</p>
                             </div>
                             <div className="faq-map text-center">
-                                <img src="assets/img/images/map_img.png" alt="img not found"/>
+                                <img src="/assets/img/images/map_img.png" alt="img not found"/>
                                 <Link href="/contact"><a className="btn map-btn">Check Your Network Coverage</a></Link>
                             </div>
                         </div>

@@ -9,7 +9,7 @@ const ShopProduct = () => {
                 <div className="shop-item shop-item-height text-center">
                     <span className="fresh-sale">SALE</span>
                     <div className="shop-thumb">
-                        <Link href="/shop-details"><a><img src="assets/img/products/product_img01.png" alt="img not found"/></a></Link>
+                        <Link href="/shop-details"><a><img src="/assets/img/products/product_img01.png" alt="img not found"/></a></Link>
                     </div>
                     <div className="shop-item-content">
                         <h6 className="title"><Link href="/shop-details"><a>Gigabit Dual Band Whole Home Mesh Wi-Fi System</a></Link></h6>
@@ -28,7 +28,7 @@ const ShopProduct = () => {
             <div className="col-xl-4 col-md-6">
                 <div className="shop-item shop-item-height text-center">
                     <div className="shop-thumb">
-                        <Link href="/shop-details"><a><img src="assets/img/products/product_img02.png" alt="img not found"/></a></Link>
+                        <Link href="/shop-details"><a><img src="/assets/img/products/product_img02.png" alt="img not found"/></a></Link>
                     </div>
                     <div className="shop-item-content">
                         <h6 className="title"><Link href="/shop-details"><a>Netbox Band Whole Home Mesh Wi-Fi System Router</a></Link></h6>
@@ -47,7 +47,7 @@ const ShopProduct = () => {
             <div className="col-xl-4 col-md-6">
                 <div className="shop-item shop-item-height text-center">
                     <div className="shop-thumb">
-                        <Link href="/shop-details"><a><img src="assets/img/products/product_img03.png" alt="img not found"/></a></Link>
+                        <Link href="/shop-details"><a><img src="/assets/img/products/product_img03.png" alt="img not found"/></a></Link>
                     </div>
                     <div className="shop-item-content">
                         <h6 className="title"><Link href="/shop-details"><a>Netbox Dual Whole Home Mesh TV Box System</a></Link></h6>
@@ -66,7 +66,7 @@ const ShopProduct = () => {
             <div className="col-xl-4 col-md-6">
                 <div className="shop-item shop-item-height text-center">
                     <div className="shop-thumb">
-                        <Link href="/shop-details"><a><img src="assets/img/products/product_img04.png" alt="img not found"/></a></Link>
+                        <Link href="/shop-details"><a><img src="/assets/img/products/product_img04.png" alt="img not found"/></a></Link>
                     </div>
                     <div className="shop-item-content">
                         <h6 className="title"><Link href="/shop-details"><a>Netbox Jabra PanaCast Virtual Video Conference</a></Link></h6>
@@ -86,7 +86,7 @@ const ShopProduct = () => {
                 <div className="shop-item shop-item-height text-center">
                     <span className="fresh-sale">SALE</span>
                     <div className="shop-thumb">
-                        <Link href="/shop-details"><a><img src="assets/img/products/product_img05.png" alt="img not found"/></a></Link>
+                        <Link href="/shop-details"><a><img src="/assets/img/products/product_img05.png" alt="img not found"/></a></Link>
                     </div>
                     <div className="shop-item-content">
                         <h6 className="title"><Link href="/shop-details"><a>DigitalX DX-T2020 Hi-Fi 120W RMS Tower Speaker</a></Link></h6>
@@ -105,7 +105,7 @@ const ShopProduct = () => {
             <div className="col-xl-4 col-md-6">
                 <div className="shop-item shop-item-height text-center">
                     <div className="shop-thumb">
-                        <Link href="/shop-details"><a><img src="assets/img/products/product_img06.png" alt="img not found"/></a></Link>
+                        <Link href="/shop-details"><a><img src="/assets/img/products/product_img06.png" alt="img not found"/></a></Link>
                     </div>
                     <div className="shop-item-content">
                         <h6 className="title"><Link href="/shop-details"><a>Netbox Portable Wi-Fi White Clearance Router</a></Link></h6>

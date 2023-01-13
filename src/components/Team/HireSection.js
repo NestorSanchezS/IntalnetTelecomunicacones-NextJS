@@ -6,7 +6,7 @@ const Hire = () => {
     return (
         <section className="team-hiring-area mb-50">
             <div className="container">
-                <div className="hiring-bg wow fadeInUp" data-wow-delay=".2s" style={{ backgroundImage:`url(${'assets/img/bg/hiring_bg.jpg'})`}}>
+                <div className="hiring-bg wow fadeInUp" data-wow-delay=".2s" style={{ backgroundImage:`url(${'/assets/img/bg/hiring_bg.jpg'})`}}>
                     <div className="row align-items-center">
                         <div className="col-lg-7">
                             <div className="team-hiring-content">

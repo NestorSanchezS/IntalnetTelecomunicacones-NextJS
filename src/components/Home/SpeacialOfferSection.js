@@ -9,7 +9,7 @@ const SpeacialOffer = () => {
                 <div className="row align-items-center">
                     <div className="col-lg-6 order-0 order-lg-2">
                         <div className="special-offer-img wow fadeInRight" data-wow-delay=".2s">
-                            <img src="assets/img/images/special_offer_img.jpg" alt="img not found"/>
+                            <img src="/assets/img/images/special_offer_img.jpg" alt="img not found"/>
                             <div className="special-offer-text">Special offer</div>
                             <div className="special-offer-mbps">
                                 <span>UP TO</span>

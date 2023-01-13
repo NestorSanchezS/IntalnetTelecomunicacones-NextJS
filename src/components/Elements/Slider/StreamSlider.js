@@ -55,7 +55,7 @@ const StreamSlider = () => {
                                         <SwiperSlide>
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
-                                                    <img src="assets/img/images/s_streaming_img01.jpg" alt="img not found"/>
+                                                    <img src="/assets/img/images/s_streaming_img01.jpg" alt="img not found"/>
                                                     <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
@@ -68,7 +68,7 @@ const StreamSlider = () => {
                                         <SwiperSlide>
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
-                                                    <img src="assets/img/images/s_streaming_img02.jpg" alt="img not found"/>
+                                                    <img src="/assets/img/images/s_streaming_img02.jpg" alt="img not found"/>
                                                     <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
@@ -81,7 +81,7 @@ const StreamSlider = () => {
                                         <SwiperSlide>
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
-                                                    <img src="assets/img/images/s_streaming_img03.jpg" alt="img not found"/>
+                                                    <img src="/assets/img/images/s_streaming_img03.jpg" alt="img not found"/>
                                                     <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
@@ -94,7 +94,7 @@ const StreamSlider = () => {
                                         <SwiperSlide>
                                             <div className="streaming-two-item swiper-slide">
                                                 <div className="streaming-two-thumb">
-                                                    <img src="assets/img/images/s_streaming_img04.jpg" alt="img not found"/>
+                                                    <img src="/assets/img/images/s_streaming_img04.jpg" alt="img not found"/>
                                                     <span className="tag">Acción</span>
                                                 </div>
                                                 <div className="streaming-two-content">
@@ -111,9 +111,9 @@ const StreamSlider = () => {
                         </div>
                     </div>
                 </div>
-                <div className="streaming-shape one"><img src="assets/img/images/streaming_shape01.png" alt="img not found"/></div>
+                <div className="streaming-shape one"><img src="/assets/img/images/streaming_shape01.png" alt="img not found"/></div>
                 {/* <div className="streaming-shape two"><img src="assets/img/images/streaming_shape02.png" alt="img not found"/></div> */}
-                <div className="streaming-shape three"><img src="assets/img/images/streaming_shape03.png" alt="img not found"/></div>
+                <div className="streaming-shape three"><img src="/assets/img/images/streaming_shape03.png" alt="img not found"/></div>
             </section>
         </React.Fragment>
     );

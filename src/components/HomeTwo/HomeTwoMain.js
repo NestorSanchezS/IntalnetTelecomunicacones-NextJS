@@ -63,7 +63,7 @@ const HomeTwoMain = () => {
 			{/* intalflix-end */}
 
 			{/* blog-area-start */}
-			<Blog />
+			{/* <Blog /> */}
 			{/* blog-area-end */}
 
 			{/* banner tv-area-start */}

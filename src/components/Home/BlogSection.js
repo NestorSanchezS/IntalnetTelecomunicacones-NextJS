@@ -22,7 +22,7 @@ const Blog = () => {
                     <div className="col-lg-4 col-md-6 col-sm-9">
                         <div className="blog-post-item mb-50 wow fadeInUp" data-wow-delay=".2s">
                             <div className="blog-post-thumb">
-                                <Link href="/blog-details"><a><img src="assets/img/blog/blog_thumb01.jpg" alt="img not found"/></a></Link>
+                                <Link href="/blog-details"><a><img src="/assets/img/blog/blog_thumb01.jpg" alt="img not found"/></a></Link>
                             </div>
                             <div className="blog-post-content">
                                 <ul className="blog-post-meta">
@@ -38,7 +38,7 @@ const Blog = () => {
                     <div className="col-lg-4 col-md-6 col-sm-9">
                         <div className="blog-post-item mb-50 wow fadeInUp" data-wow-delay=".4s">
                             <div className="blog-post-thumb">
-                                <Link href="/blog-details"><a><img src="assets/img/blog/blog_thumb02.jpg" alt="img not found"/></a></Link>
+                                <Link href="/blog-details"><a><img src="/assets/img/blog/blog_thumb02.jpg" alt="img not found"/></a></Link>
                             </div>
                             <div className="blog-post-content">
                                 <ul className="blog-post-meta">
@@ -54,7 +54,7 @@ const Blog = () => {
                     <div className="col-lg-4 col-md-6 col-sm-9">
                         <div className="blog-post-item mb-50 wow fadeInUp" data-wow-delay=".6s">
                             <div className="blog-post-thumb">
-                                <Link href="/blog-details"><a><img src="assets/img/blog/blog_thumb03.jpg" alt="img not found"/></a></Link>
+                                <Link href="/blog-details"><a><img src="/assets/img/blog/blog_thumb03.jpg" alt="img not found"/></a></Link>
                             </div>
                             <div className="blog-post-content">
                                 <ul className="blog-post-meta">

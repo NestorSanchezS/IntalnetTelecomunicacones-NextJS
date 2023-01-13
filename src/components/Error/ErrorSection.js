@@ -9,7 +9,7 @@ const ErrorSection = () => {
                 <div className="row justify-content-center">
                     <div className="col-xl-5 col-lg-6 col-md-8 col-sm-11">
                         <div className="error-img text-center mb-40">
-                            <img src="assets/img/images/404.png" alt="img not found"/>
+                            <img src="/assets/img/images/404.png" alt="img not found"/>
                         </div>
                         <div className="error-content text-center">
                             <h3 className="title">Page Not Found</h3>

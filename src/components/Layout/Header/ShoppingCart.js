@@ -6,7 +6,7 @@ const ShoppingCart = () => {
         <ul className="minicart">
             <li className="d-flex align-items-start">
                 <div className="cart-img">
-                    <Link href="/shop-details"><a><img src="assets/img/products/cart_p01.jpg" alt="img not found"/></a></Link>
+                    <Link href="/shop-details"><a><img src="/assets/img/products/cart_p01.jpg" alt="img not found"/></a></Link>
                 </div>
                 <div className="cart-content">
                     <h4><Link href="/shop-details"><a>Gigabyte Dual Band Wi-Fi Router</a></Link></h4>
@@ -21,7 +21,7 @@ const ShoppingCart = () => {
             </li>
             <li className="d-flex align-items-start">
                 <div className="cart-img">
-                    <Link href="/shop-details"><a><img src="assets/img/products/cart_p02.jpg" alt="img not found"/></a></Link>
+                    <Link href="/shop-details"><a><img src="/assets/img/products/cart_p02.jpg" alt="img not found"/></a></Link>
                 </div>
                 <div className="cart-content">
                     <h4><Link href="/shop-details"><a>Netbox Dual Whole TV Box System</a></Link></h4>

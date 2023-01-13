@@ -6,8 +6,12 @@ import Head from 'next/head';
 import HeaderLogoTwo from './HeaderLogoTwo';
 import TopHeaderTwo from './TopBarTwo';
 import ShoppingCart from './ShoppingCart';
+import { useIntalnetContext } from '../../../hooks/useIntalnetContext';
+import { HeaderCitie } from './HeaderCitie';
 
 const HeaderTwo = () => {
+
+    const {getCities} = useIntalnetContext();
 
 	const [menuOpen, setMenuOpen] = useState(false)
 
@@ -50,7 +54,7 @@ const HeaderTwo = () => {
                             <div className="menu-wrap">
                                 <nav className="menu-nav">
                                     <div className="logo">
-                                        <Link href="/"><a><img src="assets/img/logo/logo.png" alt="img not found"/></a></Link>
+                                        <Link href="/"><a><img src="/assets/img/logo/logo.png" alt="img not found"/></a></Link>
                                     </div>
                                     <div className="navbar-wrap navbar-wrap-two main-menu d-none d-lg-flex">
                                         <ul className="navigation">
@@ -61,10 +65,13 @@ const HeaderTwo = () => {
                                                 </ul> */}
                                             </li>
                                             <li><Link href="/about"><a>Nuestra empresa</a></Link></li>
-                                            <li className="menu-item-has-children"><Link href="/services"><a>Plane por sedes</a></Link>
+                                            <li className="menu-item-has-children"><a>Planes por sedes</a>
                                                 <ul className="sub-menu">
-                                                    <li><Link href="/services"><a>Our Services</a></Link></li>
-                                                    <li><Link href="/service-details"><a>Services Details</a></Link></li>
+                                                    {/* <li><Link href="/services"><a>Our Services</a></Link></li>
+                                                    <li><Link href="/service-details"><a>Services Details</a></Link></li> */}
+                                                    {getCities.map((citie)=> (
+                                                        <HeaderCitie key={citie.id} citie={citie} />
+                                                    ))}
                                                 </ul>
                                             </li>
                                             <li className="menu-item-has-children"><a href="#">Pages</a>

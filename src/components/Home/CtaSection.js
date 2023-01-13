@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Cta = () => {
 
     return (
-        <section className="cta-area cta-bg jarallax" style={{ backgroundImage:`url(${'assets/img/bg/cta_bg.jpg'})`}}>
+        <section className="cta-area cta-bg jarallax" style={{ backgroundImage:`url(${'/assets/img/bg/cta_bg.jpg'})`}}>
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-9 col-lg-10">

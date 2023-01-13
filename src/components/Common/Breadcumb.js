@@ -11,7 +11,7 @@ const { pageTitle } = props;
 					<div className="breadcrumb-content">
 					<h3 className="title">{ pageTitle ? pageTitle : 'About Us'}</h3>
 	                    <ul className="breadcrumb-menu" aria-label="breadcrumb">
-	                        <li className="breadcrumb-item"><Link href="/"><a>Home</a></Link></li>
+	                        <li className="breadcrumb-item"><Link href="/"><a>Inicio</a></Link></li>
 	                        <li className="breadcrumb-item active" aria-current="page">{ pageTitle ? pageTitle : 'Blog'}</li>
 	                    </ul>
 	                </div>
