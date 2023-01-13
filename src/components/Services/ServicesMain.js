@@ -69,7 +69,7 @@ const ServiceMain = () => {
 								</div>
 								<div className="services-content">
 									<h3 className="title"><Link href="/service-details"><a>WiFi Internet</a></Link></h3>
-									<p>Todos los planes viene con Wi-Fi integrado, para que puedas conectar fácilmente tus dispositivos inalámbricos en tu casa.</p>
+									<p>Todos los planes viene con Wi-Fi integrado, para que puedas conectar fácilmente tus dispositivos.</p>
 									{/* <Link href="/service-details"><a className="btn btn-link">Read more</a></Link> */}
 								</div>
 							</div>
@@ -104,7 +104,7 @@ const ServiceMain = () => {
 			{/* service-area-end */}
 
 			{/* pricing-area-start */}
-			<PricingThree />
+			<PricingThree plans={plans} />
 			{/* pricing-area-end */}
 
 			{/* brand-area-start */}

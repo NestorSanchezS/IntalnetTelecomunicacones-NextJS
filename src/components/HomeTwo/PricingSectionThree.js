@@ -1,7 +1,8 @@
 import React from 'react';
 import Link from 'next/link';
+import { PlanCitieService} from './PlanCitieService'
 
-const PricingThree = () => {
+const PricingThree = ({plans}) => {
 
     return (
         <section className="pricing-three-area pt-110 pb-90">
@@ -14,7 +15,10 @@ const PricingThree = () => {
                     </div>
                 </div>
                 <div className="row justify-content-center">
-                    <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+                    {plans && 
+                        plans.map((plane) => <PlanCitieService key={plane.id} plane={plane} />)
+                    }
+                    {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div className="pricing-three-item mb-30">
                             <div className="pricing-three-head">
                                 <h4 className="title">Starter Bundle</h4>
@@ -107,7 +111,7 @@ const PricingThree = () => {
                             <h2 className="pricing-three-price"><span>From</span> 85.99<span>/mon</span></h2>
                             <Link href="/pricing"><a className="btn transparent-btn">Get Started</a></Link>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </section>
