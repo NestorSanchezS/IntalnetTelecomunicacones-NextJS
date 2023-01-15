@@ -1,24 +1,24 @@
-import React from 'react';
-import Link from 'next/link';
-import { PlanCitieService} from './PlanCitieService'
+import React from "react";
+import Link from "next/link";
+import { PlanCitieService } from "./PlanCitieService";
 
-const PricingThree = ({plans}) => {
-
-    return (
-        <section className="pricing-three-area pt-110 pb-90">
-            <div className="container">
-                <div className="row justify-content-center">
-                    <div className="col-xl-5 col-lg-6 col-md-8">
-                        <div className="section-title text-center mb-50">
-                            <h2 className="title">Descubra Nuestros Planes</h2>
-                        </div>
-                    </div>
-                </div>
-                <div className="row justify-content-center">
-                    {plans && 
-                        plans.map((plane) => <PlanCitieService key={plane.id} plane={plane} />)
-                    }
-                    {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+const PricingThree = ({ plans, name }) => {
+  return (
+    <section className="pricing-three-area pt-110 pb-90">
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-xl-5 col-lg-6 col-md-8">
+            <div className="section-title text-center mb-50">
+              <h2 className="title">Descubra Nuestros Planes</h2>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          {plans &&
+            plans.map((plane) => (
+              <PlanCitieService key={plane.id} plane={plane} />
+            ))}
+          {/* <div className="col-xl-3 col-lg-4 col-md-6 col-sm-8">
                         <div className="pricing-three-item mb-30">
                             <div className="pricing-three-head">
                                 <h4 className="title">Starter Bundle</h4>
@@ -112,12 +112,10 @@ const PricingThree = ({plans}) => {
                             <Link href="/pricing"><a className="btn transparent-btn">Get Started</a></Link>
                         </div>
                     </div> */}
-                    <Link href="/pricing"><a className="btn transparent-btn">Get Started</a></Link>
-                </div>
-            </div>
-        </section>
-    );
-    
-}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 export default PricingThree;

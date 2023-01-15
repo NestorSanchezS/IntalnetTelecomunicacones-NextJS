@@ -219,13 +219,45 @@ label {
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
+
 }
 .transparent-btn {
 	background: transparent;
 	border: 2px solid var(--primary-color);
 	color: var(--primary-color);
 	padding: 18px 34px;
+	text-align: center;
 }
+
+.w-and-btn{
+	width: 20%;
+	margin: 0 auto;
+	display: flex;
+	align-items:center;
+
+}
+
+
+
+@media (max-width: 650px) {
+	.w-and-btn{
+		width:70%
+	}
+}
+
+
+@media (min-width: 1350px) {
+	.w-and-btn{
+		width:20%
+	}
+}
+
+@media (min-width: 2000px) {
+	.w-and-btn{
+		width:12%
+	}
+}
+
 .btn::before {
     content: "";
     position: absolute;
@@ -240,6 +272,7 @@ label {
     transform: translateX(-50%);
     border-radius: 50%;
     z-index: -1;
+	text-align: center;
 }
 .transparent-btn::before {
 	background: var(--primary-color);
