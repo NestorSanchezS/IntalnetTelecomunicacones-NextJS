@@ -5,15 +5,15 @@ export const ButtonGrillTv = ({ plans, name }) => {
     serv.services.map((serv2) => serv2)
   );
 
-  const getTypeChannelsTv = typeTvChannels?.map(
-    (serv) => serv.find((e) => e.id === 16).name
-  );
+  // const getTypeChannelsTv = typeTvChannels?.map(
+  //   (serv) => serv.find((e) => e.id === 16).name
+  // );
 
   let filepdf = "/assets/docs/monteria.pdf";
 
-  if (getTypeChannelsTv?.includes("75 Canales TV")) {
-    filepdf = "/assets/docs/valencia-tierralta.pdf";
-  }
+  // if (getTypeChannelsTv?.includes("75 Canales TV")) {
+  //   filepdf = "/assets/docs/valencia-tierralta.pdf";
+  // }
 
   return (
     <>
