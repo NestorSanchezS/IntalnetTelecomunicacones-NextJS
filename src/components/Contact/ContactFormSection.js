@@ -1,5 +1,17 @@
 import React from "react";
 import Link from "next/link";
+import { Formik } from "formik";
+
+const onSubmit = async (values, actions) => {
+  // console.log(values);
+  // console.log(actions);
+  emailjs
+    .send("service_ii3fhsq", "template_xij9e9k", values, "9lX7hXXub4LjBAc_z")
+    .then((response) => console.log(response))
+    .catch((error) => console.log(error));
+  await new Promise((resolve) => setTimeout(resolve, 1000));
+  actions.resetForm();
+};
 
 const ContactForm = () => {
   return (
@@ -10,67 +22,80 @@ const ContactForm = () => {
             <div className="contact-title">
               <h3 className="title">CONECTATE AHORA</h3>
             </div>
-            <form action="#" className="contact-form">
-              <div className="row">
-                <div className="col-md-6">
-                  <div className="form-grp">
-                    <input type="text" id="name" autoComplete="off" required />
-                    <label htmlFor="name">Nombres</label>
+
+            <Formik
+              initialValues={{
+                servi: "",
+                address: "",
+                name: "",
+                phone: "",
+                email: "",
+                message: "",
+              }}
+            >
+              <form action="#" className="contact-form">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="form-grp">
+                      <input type="text" id="name" required />
+                      <label htmlFor="name">Nombres</label>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-grp">
+                      <input type="text" id="phone" required />
+                      <label htmlFor="phone">Numero de celular</label>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-grp">
+                      <input type="email" id="email" required />
+                      <label htmlFor="email">Email</label>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-grp">
+                      <select
+                        className="form-select"
+                        aria-label="Default select example"
+                      >
+                        <option>--Escoge una opción--</option>
+                        <option>Uso residencial / Negocio</option>
+                        <option>Servicio internet dedicado</option>
+                        <option>Camaras de seguridad</option>
+                        <option>Deseo accesorio tecnologico</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div className="col-md-6">
+                    <div className="form-grp">
+                      <input type="text" id="address" required />
+                      <label htmlFor="email">Dirección</label>
+                    </div>
                   </div>
                 </div>
-                <div className="col-md-6">
-                  <div className="form-grp">
-                    <input type="text" id="phone" autoComplete="off" required />
-                    <label htmlFor="phone">Numero de celular</label>
-                  </div>
+                <div className="form-grp">
+                  <textarea name="message" id="message" required></textarea>
+                  <label htmlFor="message">Mensaje</label>
                 </div>
-                <div className="col-md-6">
-                  <div className="form-grp">
-                    <input
-                      type="email"
-                      id="email"
-                      autoComplete="off"
-                      required
-                    />
-                    <label htmlFor="email">Email</label>
-                  </div>
-                </div>
-                <div className="col-md-6">
-                  <div className="form-grp">
-                    <select
-                      className="form-select"
-                      aria-label="Default select example"
-                    >
-                      <option>--Escoge una opción--</option>
-                      <option>Uso residencial / Negocio</option>
-                      <option>Servicio internet dedicado</option>
-                      <option>Camaras de seguridad</option>
-                      <option>Deseo accesorio tecnologico</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div className="form-grp">
-                <textarea name="message" id="message" required></textarea>
-                <label htmlFor="message">Mensaje</label>
-              </div>
-              <p className="contact-form-check">
-                <input
-                  type="checkbox"
-                  className="form-check-input"
-                  id="cookies-consent"
-                />
-                <label htmlFor="cookies-consent" className="form-check-label">
-                  Acepto que mis datos enviados se recopilen y almacenen.
-                  <Link href="/contact">
-                    <a> Privacy Policy</a>
-                  </Link>
-                </label>
-              </p>
-              <button type="submit" className="btn">
-                Enviar
-              </button>
-            </form>
+                <p className="contact-form-check">
+                  <input
+                    type="checkbox"
+                    className="form-check-input"
+                    id="cookies-consent"
+                  />
+                  <label htmlFor="cookies-consent" className="form-check-label">
+                    Acepto que mis datos enviados se recopilen y almacenen.
+                    <Link href="/contact">
+                      <a> Privacy Policy</a>
+                    </Link>
+                  </label>
+                </p>
+                <button type="submit" className="btn">
+                  Enviar
+                </button>
+              </form>
+            </Formik>
           </div>
           <div className="col-lg-4">
             <div className="contact-info-wrap">
