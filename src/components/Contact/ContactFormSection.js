@@ -86,15 +86,30 @@ const ContactForm = () => {
                     </div>
                     <div className="col-md-6">
                       <div className="form-grp">
-                        <input type="email" id="email" />
+                        <input
+                          type="email"
+                          id="email"
+                          aria-required="true"
+                          className={` ${
+                            errors.email && touched.email ? "input-error" : ""
+                          }`}
+                          {...getFieldProps("email")}
+                        />
+                        {errors.email && touched.email && (
+                          <p className="error">{errors.email}</p>
+                        )}
                         <label htmlFor="email">Email</label>
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-grp">
                         <select
-                          className="form-select"
                           aria-label="Default select example"
+                          className={`form-control form-select ${
+                            errors.servi && touched.servi ? "input-error" : ""
+                          }`}
+                          id="select"
+                          {...getFieldProps("servi")}
                         >
                           <option>--Escoge una opción--</option>
                           <option>Uso residencial / Negocio</option>
@@ -102,18 +117,43 @@ const ContactForm = () => {
                           <option>Camaras de seguridad</option>
                           <option>Deseo accesorio tecnologico</option>
                         </select>
+                        {errors.servi && touched.servi && (
+                          <p className="error">{errors.address}</p>
+                        )}
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-grp">
-                        <input type="text" id="address" />
+                        <input
+                          type="text"
+                          id="address"
+                          className={` ${
+                            errors.address && touched.address
+                              ? "input-error"
+                              : ""
+                          }`}
+                          {...getFieldProps("address")}
+                        />
                         <label htmlFor="email">Dirección</label>
+                        {errors.address && touched.address && (
+                          <p className="error">{errors.address}</p>
+                        )}
                       </div>
                     </div>
                   </div>
                   <div className="form-grp">
-                    <textarea name="message" id="message"></textarea>
+                    <textarea
+                      name="message"
+                      id="message"
+                      className={`form-control ${
+                        errors.message && touched.message ? "input-error" : ""
+                      }`}
+                      {...getFieldProps("message")}
+                    ></textarea>
                     <label htmlFor="message">Mensaje</label>
+                    {errors.message && touched.message && (
+                      <p className="error">{errors.message}</p>
+                    )}
                   </div>
                   <p className="contact-form-check">
                     <input
