@@ -7,6 +7,7 @@ import {
   AccordionItemButton,
 } from "react-accessible-accordion";
 import { BASE_URL } from "../../constans/dominio";
+import { QuestionAndAnswer } from "./QuestionAndAnswer";
 
 const FaqAccordion = () => {
   const [getQuestions, setGetQuestions] = useState([]);
@@ -24,7 +25,10 @@ const FaqAccordion = () => {
     };
     callApiQuestions();
   }, []);
-  console.log(getQuestions);
+
+  const getIdQuesAndAns = getQuestions?.filter((num) => num.id <= 6);
+  const getIdQuesAndAns2 = getQuestions?.filter((num) => num.id > 6);
+
   return (
     <section className="faq-area pt-110 pb-120">
       <div className="container">
@@ -52,246 +56,26 @@ const FaqAccordion = () => {
               <div className="col-lg-6">
                 <div className="faq-wrapper faq-wrapper2">
                   <Accordion className="accodion-style--1" preExpanded={"0"}>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingOne">
-                            <button className="accordion-button" type="button">
-                              Do I have to be an existing T-Mobile customer?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingTwo">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              What is a commercial on-line service?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingThree">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              How much does the T-Mobile Home Internet plan
-                              cost?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingFour">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              How can I get Internet for my business?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingFive">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              When do you expect to roll out more markets?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
+                    {getIdQuesAndAns.map((e) => (
+                      <QuestionAndAnswer
+                        key={e.id}
+                        questions={e.question}
+                        answer={e.answer}
+                      />
+                    ))}
                   </Accordion>
                 </div>
               </div>
               <div className="col-lg-6">
                 <div className="faq-wrapper faq-wrapper2">
                   <Accordion className="accodion-style--1" preExpanded={"0"}>
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingOne">
-                            <button className="accordion-button" type="button">
-                              Do I have to be an existing T-Mobile customer?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingTwo">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              What is a commercial on-line service?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingThree">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              How much does the T-Mobile Home Internet plan
-                              cost?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingFour">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              How can I get Internet for my business?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
-
-                    <AccordionItem>
-                      <AccordionItemHeading>
-                        <AccordionItemButton>
-                          <h2 className="accordion-header" id="headingFive">
-                            <button
-                              className="accordion-button collapsed"
-                              type="button"
-                            >
-                              When do you expect to roll out more markets?
-                            </button>
-                          </h2>
-                        </AccordionItemButton>
-                      </AccordionItemHeading>
-                      <AccordionItemPanel>
-                        <div className="accordion-body">
-                          Yes! You'll be able to use your T-Mobile Home Internet
-                          to connect your computer, phone, and numerous other
-                          devices in your home simultaneously. People over
-                          time-we appreciate your patience! As soon as we're
-                          ready for you, we'll let you know
-                        </div>
-                      </AccordionItemPanel>
-                    </AccordionItem>
+                    {getIdQuesAndAns2.map((e) => (
+                      <QuestionAndAnswer
+                        key={e.id}
+                        questions={e.question}
+                        answer={e.answer}
+                      />
+                    ))}
                   </Accordion>
                 </div>
               </div>
