@@ -80,21 +80,15 @@ const HeaderTwo = () => {
                           <Link href="/">
                             <a>Inicio</a>
                           </Link>
-                          {/* <ul className="sub-menu">
-                                                    <li><Link href="/"><a>Home One</a></Link></li>
-                                                    <li><Link href="/home-2"><a>Home Two</a></Link></li>
-                                                </ul> */}
                         </li>
                         <li>
                           <Link href="/about">
-                            <a>Nuestra empresa</a>
+                            <a>Nosotros</a>
                           </Link>
                         </li>
                         <li className="menu-item-has-children">
                           <a href="#">Planes por sedes</a>
                           <ul className="sub-menu">
-                            {/* <li><Link href="/services"><a>Our Services</a></Link></li>
-                                                    <li><Link href="/service-details"><a>Services Details</a></Link></li> */}
                             {getCities.map((citie) => (
                               <HeaderCitie key={citie.id} citie={citie} />
                             ))}
@@ -108,24 +102,29 @@ const HeaderTwo = () => {
                                 <a></a>
                               </Link>
                             </li>
-                            <li>
+                            {/* <li>
                               <Link href="/team">
                                 <a>Creative Team</a>
                               </Link>
-                            </li>
+                            </li> */}
                             <li>
                               <Link href="/faq">
                                 <a>Preguntas Frecuentes</a>
                               </Link>
                             </li>
                             <li>
-                              <Link href="/shop">
-                                <a>Our Shop</a>
+                              <Link href="/pqr">
+                                <a>PQR</a>
                               </Link>
                             </li>
                             <li>
-                              <Link href="/shop-details">
-                                <a>Shop Details</a>
+                              <Link href="/userprotection">
+                                <a>Proteción al Usuario</a>
+                              </Link>
+                            </li>
+                            <li>
+                              <Link href="/internetsano">
+                                <a>Internet Sano</a>
                               </Link>
                             </li>
                             <li>
@@ -154,7 +153,7 @@ const HeaderTwo = () => {
                         </li>
                         <li>
                           <Link href="/contact">
-                            <a>Contectanos</a>
+                            <a>Contáctenos</a>
                           </Link>
                         </li>
                       </ul>

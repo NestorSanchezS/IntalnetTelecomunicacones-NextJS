@@ -36,7 +36,7 @@ const Fact = () => {
               </p>
               <CounterStyleTwo />
               <Link href="/contact">
-                <a className="btn transparent-btn">Contectanos</a>
+                <a className="btn transparent-btn">Contáctenos</a>
               </Link>
             </div>
           </div>
