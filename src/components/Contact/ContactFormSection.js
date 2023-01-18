@@ -1,6 +1,8 @@
 import React from "react";
 import Link from "next/link";
 import { Formik } from "formik";
+import { formContactusSchema } from "../../schemas";
+import emailjs from "@emailjs/browser";
 
 const onSubmit = async (values, actions) => {
   // console.log(values);
@@ -32,69 +34,113 @@ const ContactForm = () => {
                 email: "",
                 message: "",
               }}
+              validationSchema={formContactusSchema}
+              onSubmit={onSubmit}
             >
-              <form action="#" className="contact-form">
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-grp">
-                      <input type="text" id="name" required />
-                      <label htmlFor="name">Nombres</label>
+              {({
+                isSubmitting,
+                touched,
+                handleSubmit,
+                errors,
+                getFieldProps,
+              }) => (
+                <form
+                  onSubmit={handleSubmit}
+                  className="contact-form"
+                  action="/"
+                >
+                  <div className="row">
+                    <div className="col-md-6">
+                      <div className="form-grp">
+                        <input
+                          type="text"
+                          id="name"
+                          aria-required="true"
+                          className={` ${
+                            errors.name && touched.name ? "input-error" : ""
+                          }`}
+                          {...getFieldProps("name")}
+                        />
+                        {errors.name && touched.name && (
+                          <p className="error">{errors.name}</p>
+                        )}
+                        <label htmlFor="name">Nombres</label>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-grp">
+                        <input
+                          type="text"
+                          id="phone"
+                          aria-required="true"
+                          className={` ${
+                            errors.phone && touched.phone ? "input-error" : ""
+                          }`}
+                          {...getFieldProps("phone")}
+                        />
+                        {errors.phone && touched.phone && (
+                          <p className="error">{errors.phone}</p>
+                        )}
+                        <label htmlFor="phone">Numero de celular</label>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-grp">
+                        <input type="email" id="email" />
+                        <label htmlFor="email">Email</label>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-grp">
+                        <select
+                          className="form-select"
+                          aria-label="Default select example"
+                        >
+                          <option>--Escoge una opción--</option>
+                          <option>Uso residencial / Negocio</option>
+                          <option>Servicio internet dedicado</option>
+                          <option>Camaras de seguridad</option>
+                          <option>Deseo accesorio tecnologico</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-grp">
+                        <input type="text" id="address" />
+                        <label htmlFor="email">Dirección</label>
+                      </div>
                     </div>
                   </div>
-                  <div className="col-md-6">
-                    <div className="form-grp">
-                      <input type="text" id="phone" required />
-                      <label htmlFor="phone">Numero de celular</label>
-                    </div>
+                  <div className="form-grp">
+                    <textarea name="message" id="message"></textarea>
+                    <label htmlFor="message">Mensaje</label>
                   </div>
-                  <div className="col-md-6">
-                    <div className="form-grp">
-                      <input type="email" id="email" required />
-                      <label htmlFor="email">Email</label>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-grp">
-                      <select
-                        className="form-select"
-                        aria-label="Default select example"
-                      >
-                        <option>--Escoge una opción--</option>
-                        <option>Uso residencial / Negocio</option>
-                        <option>Servicio internet dedicado</option>
-                        <option>Camaras de seguridad</option>
-                        <option>Deseo accesorio tecnologico</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-grp">
-                      <input type="text" id="address" required />
-                      <label htmlFor="email">Dirección</label>
-                    </div>
-                  </div>
-                </div>
-                <div className="form-grp">
-                  <textarea name="message" id="message" required></textarea>
-                  <label htmlFor="message">Mensaje</label>
-                </div>
-                <p className="contact-form-check">
-                  <input
-                    type="checkbox"
-                    className="form-check-input"
-                    id="cookies-consent"
-                  />
-                  <label htmlFor="cookies-consent" className="form-check-label">
-                    Acepto que mis datos enviados se recopilen y almacenen.
-                    <Link href="/contact">
-                      <a> Privacy Policy</a>
-                    </Link>
-                  </label>
-                </p>
-                <button type="submit" className="btn">
-                  Enviar
-                </button>
-              </form>
+                  <p className="contact-form-check">
+                    <input
+                      type="checkbox"
+                      className="form-check-input"
+                      id="cookies-consent"
+                    />
+                    <label
+                      htmlFor="cookies-consent"
+                      className="form-check-label"
+                    >
+                      Acepto que mis datos enviados se recopilen y almacenen.
+                      <Link href="/contact">
+                        <a> Privacy Policy</a>
+                      </Link>
+                    </label>
+                  </p>
+                  <button
+                    type="submit"
+                    id=" button_submit-disabled"
+                    className="btn"
+                    disabled={isSubmitting}
+                  >
+                    Enviar
+                  </button>
+                </form>
+              )}
             </Formik>
           </div>
           <div className="col-lg-4">
