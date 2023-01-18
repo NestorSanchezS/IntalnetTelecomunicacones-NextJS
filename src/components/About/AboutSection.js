@@ -40,7 +40,7 @@ const About = () => {
                 <li>De confianza y recomendado</li>
               </ul>
               <Link href="/contact">
-                <a className="btn transparent-btn">Contactanos</a>
+                <a className="btn transparent-btn">Contactenos</a>
               </Link>
             </div>
           </div>

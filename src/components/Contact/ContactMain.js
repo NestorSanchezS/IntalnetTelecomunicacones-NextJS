@@ -11,7 +11,7 @@ const ContactMain = () => {
   return (
     <main>
       {/* breadcrumb-area-start */}
-      <Breadcrumb pageTitle="Contáctanos" />
+      <Breadcrumb pageTitle="Contáctenos" />
       {/* breadcrumb-area-end */}
 
       {/* contact-area-start */}

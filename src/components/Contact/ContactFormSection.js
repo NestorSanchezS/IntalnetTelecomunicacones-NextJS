@@ -61,10 +61,11 @@ const ContactForm = () => {
                           }`}
                           {...getFieldProps("name")}
                         />
+
+                        <label htmlFor="name">Nombres</label>
                         {errors.name && touched.name && (
                           <p className="error">{errors.name}</p>
                         )}
-                        <label htmlFor="name">Nombres</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -78,10 +79,10 @@ const ContactForm = () => {
                           }`}
                           {...getFieldProps("phone")}
                         />
+                        <label htmlFor="phone">Numero de celular</label>
                         {errors.phone && touched.phone && (
                           <p className="error">{errors.phone}</p>
                         )}
-                        <label htmlFor="phone">Numero de celular</label>
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -95,10 +96,11 @@ const ContactForm = () => {
                           }`}
                           {...getFieldProps("email")}
                         />
+
+                        <label htmlFor="email">Email</label>
                         {errors.email && touched.email && (
                           <p className="error">{errors.email}</p>
                         )}
-                        <label htmlFor="email">Email</label>
                       </div>
                     </div>
                     <div className="col-md-6">

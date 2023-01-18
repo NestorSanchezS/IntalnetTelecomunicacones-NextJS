@@ -5,12 +5,13 @@ export const formContactusSchema = yup.object().shape({
   address: yup.string().required("Este campo es requerido"),
   name: yup.string().required("Este campo es requerido"),
   phone: yup
-    .number("Inserte num celular valido ")
+    .number("Inserte numero de celular valido ")
+    .typeError("Estos digitos son inválidos")
     .positive()
     .required("Este campo es requerido"),
   email: yup
     .string()
-    .email("Inserta un email valido")
-    .required("Este camp es requerido"),
+    .email("Inserte un email valido")
+    .required("Este campo es requerido"),
   message: yup.string().required("Este campo es requerido"),
 });
