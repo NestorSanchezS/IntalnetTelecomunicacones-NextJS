@@ -112,11 +112,7 @@ const HeaderTwo = () => {
                                 <a>Preguntas Frecuentes</a>
                               </Link>
                             </li>
-                            <li>
-                              <Link href="/pqr">
-                                <a>PQR</a>
-                              </Link>
-                            </li>
+
                             <li>
                               <Link href="/userprotection">
                                 <a>Proteción al Usuario</a>
@@ -128,17 +124,22 @@ const HeaderTwo = () => {
                               </Link>
                             </li>
                             <li>
+                              <Link href="/pqr">
+                                <a>PQR</a>
+                              </Link>
+                            </li>
+                            <li>
                               <Link href="/error">
                                 <a>404 Page</a>
                               </Link>
                             </li>
                           </ul>
                         </li>
-                        <li className="menu-item-has-children">
+                        <li>
                           <Link href="/blog">
-                            <a>News</a>
+                            <a>Accesorios de Tecnologia</a>
                           </Link>
-                          <ul className="sub-menu">
+                          {/* <ul className="sub-menu">
                             <li>
                               <Link href="/blog">
                                 <a>Our News</a>
@@ -149,7 +150,7 @@ const HeaderTwo = () => {
                                 <a>News Details</a>
                               </Link>
                             </li>
-                          </ul>
+                          </ul> */}
                         </li>
                         <li>
                           <Link href="/contact">
@@ -178,13 +179,13 @@ const HeaderTwo = () => {
                             </h5>
                           </div>
                         </li>
-                        <li className="header-btn">
+                        {/* <li className="header-btn">
                           <Link href="/contact">
                             <a className="btn transparent-btn">
                               Obtener cotización
                             </a>
                           </Link>
-                        </li>
+                        </li> */}
                       </ul>
                     </div>
                   </nav>
