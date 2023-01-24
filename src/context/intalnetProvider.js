@@ -7,6 +7,8 @@ export const IntalnetProvider = ({ children }) => {
   //get cities
   const [getCities, setGetCities] = useState([]);
   const [getProductCardApi, setGetProductCardApi] = useState([]);
+  const [searchProductCardApi, setSearchProductCardApi] = useState([]);
+  const [search, setSearch] = useState("");
   useEffect(() => {
     const getApiCities = async () => {
       try {
@@ -29,6 +31,7 @@ export const IntalnetProvider = ({ children }) => {
         const response = await fetch(url);
         const data = await response.json();
         setGetProductCardApi(data);
+        setSearchProductCardApi(data);
       } catch (error) {
         console.log(error);
       }
@@ -36,8 +39,24 @@ export const IntalnetProvider = ({ children }) => {
     getProducts();
   }, []);
 
+  const handleChange = ({ target }) => {
+    setSearch(target.value);
+    filterSearchProduct(target.value);
+  };
+
+  const filterSearchProduct = (searchterm) => {
+    let resultSearch = searchProductCardApi?.filter((e) => {
+      if (e.name.toString().toLowerCase().includes(searchterm.toLowerCase())) {
+        return e;
+      }
+    });
+    setGetProductCardApi(resultSearch);
+  };
+
   return (
-    <IntalnetContext.Provider value={{ getCities, getProductCardApi }}>
+    <IntalnetContext.Provider
+      value={{ getCities, getProductCardApi, handleChange, search }}
+    >
       {children}
     </IntalnetContext.Provider>
   );

@@ -1,16 +1,24 @@
-import React from 'react';
+import React from "react";
+import { useIntalnetContext } from "../../hooks/useIntalnetContext";
 
 const ShopSidebarSearch = () => {
-
-    return (
-        <div className="widget">
-            <form action="#" className="sidebar-search-form">
-                <input type="text" placeholder="Search" />
-                <button><i className="far fa-search"></i></button>
-            </form>
-        </div>
-    );
-    
-}
+  const { handleChange, search } = useIntalnetContext();
+  return (
+    <div className="widget">
+      <form action="#" className="sidebar-search-form">
+        <input
+          type="search"
+          placeholder="Search"
+          name="search"
+          value={search}
+          onChange={handleChange}
+        />
+        <button>
+          <i className="far fa-search"></i>
+        </button>
+      </form>
+    </div>
+  );
+};
 
 export default ShopSidebarSearch;
