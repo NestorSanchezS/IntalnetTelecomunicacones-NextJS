@@ -4,6 +4,8 @@ import Link from "next/link";
 import emailjs from "@emailjs/browser";
 import { formPqrSchema } from "../../schemas";
 import Breadcrumb from "../Common/Breadcumb";
+import { ServiceSectionCard } from "../Services/ServiceSectionCard";
+import Brand from "../Home/BrandSection";
 
 const onSubmit = async (values, actions) => {
   // console.log(values);
@@ -20,6 +22,7 @@ export const PqrMain = () => {
   return (
     <main>
       <Breadcrumb pageTitle="PQR´S" />
+      <Brand />
       <section className="contact-area pt-115 pb-120">
         <div className="container">
           <div className="row">
@@ -221,6 +224,7 @@ export const PqrMain = () => {
           </div>
         </div>
       </section>
+      <ServiceSectionCard />
     </main>
   );
 };

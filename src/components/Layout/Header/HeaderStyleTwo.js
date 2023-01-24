@@ -121,7 +121,7 @@ const HeaderTwo = () => {
                           </ul>
                         </li>
                         <li>
-                          <Link href="/tecnolgyaccesories">
+                          <Link href="/shop">
                             <a>Accesorios de Tecnologia</a>
                           </Link>
                           {/* <ul className="sub-menu">
