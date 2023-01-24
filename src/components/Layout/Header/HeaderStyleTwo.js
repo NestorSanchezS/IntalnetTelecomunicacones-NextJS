@@ -118,11 +118,6 @@ const HeaderTwo = () => {
                                 <a>PQR</a>
                               </Link>
                             </li>
-                            <li>
-                              <Link href="/error">
-                                <a>404 Page</a>
-                              </Link>
-                            </li>
                           </ul>
                         </li>
                         <li>

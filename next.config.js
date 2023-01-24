@@ -4,7 +4,7 @@ module.exports = withImages({
   webpack(config, options) {
     return config;
   },
-  experimental: {
-    outputStandalone: true,
-  },
+  // experimental: {
+  //   outputStandalone: true,
+  // },
 });
