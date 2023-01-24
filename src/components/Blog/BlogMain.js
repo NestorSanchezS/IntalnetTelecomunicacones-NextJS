@@ -35,7 +35,7 @@ const BlogMain = () => {
             </div>
             <div className="col-xl-4 col-lg-5">
               <aside className="blog-sidebar">
-                <BlogSearch />
+                {/* <BlogSearch /> */}
                 <BlogSocial />
                 <BlogCategory />
                 <BlogSidebarPost />
