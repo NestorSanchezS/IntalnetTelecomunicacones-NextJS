@@ -8,7 +8,7 @@ const ErrorPage = () => {
     <React.Fragment>
       <HeaderTwo />
       <ErrorMain />
-      <Footer />
+      {/* <Footer /> */}
     </React.Fragment>
   );
 };

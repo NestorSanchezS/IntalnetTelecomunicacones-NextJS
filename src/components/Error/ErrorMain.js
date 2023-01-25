@@ -18,7 +18,7 @@ const ErrorMain = () => {
       {/* error-area-end */}
 
       {/* faq-area-start */}
-      <Brand />
+      {/* <Brand /> */}
       {/* faq-area-end */}
     </main>
   );

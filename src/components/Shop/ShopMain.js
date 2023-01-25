@@ -24,7 +24,7 @@ const ShopMain = () => {
             <div className="col-xl-9 col-lg-8">
               {/* <ShopMeta /> */}
               <ShopProduct />
-              <Pagination />
+              {/* <Pagination /> */}
             </div>
             <div className="col-xl-3 col-lg-4">
               <aside className="shop-sidebar">
