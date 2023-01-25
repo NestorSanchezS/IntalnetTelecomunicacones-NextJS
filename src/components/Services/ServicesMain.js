@@ -54,8 +54,9 @@ const ServiceMain = () => {
       {/* pricing-area-start */}
       <PricingThree plans={plans} name={name} />
       {/* pricing-area-end */}
-
-      <ButtonGrillTv plans={plans} name={name} />
+      <div className="button-center">
+        <ButtonGrillTv plans={plans} name={name} />
+      </div>
 
       {/* brand-area-start */}
       <Brand />

@@ -9,8 +9,6 @@ export const ButtonGrillTv = ({ name, plans }) => {
     (serv) => serv.find((e) => e.id === 17)?.name
   );
 
-  console.log(getTypeChannelsTv);
-
   let filepdf = "/assets/docs/monteria.pdf";
 
   if (getTypeChannelsTv?.includes("75 Canales TV")) {
@@ -18,15 +16,13 @@ export const ButtonGrillTv = ({ name, plans }) => {
   }
 
   return (
-    <>
-      <a
-        className="btn transparent-btn w-and-btn"
-        href={filepdf}
-        rel="noopener noreferrer"
-        target="_blank"
-      >
-        Ver Parrilla de Canales
-      </a>
-    </>
+    <a
+      className="btn transparent-btn "
+      href={filepdf}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Ver Parrilla de Canales
+    </a>
   );
 };
