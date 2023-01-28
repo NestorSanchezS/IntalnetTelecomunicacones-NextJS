@@ -24,7 +24,7 @@ export const ProductInfoSlider = ({ productCard }) => {
           <span className="fresh-sale">Promoción!</span>
         )}
         <div className="shop-thumb">
-          <Link href="/shop-details">
+          <Link href={`/infoproduct/${id}`}>
             <a>
               <img src={imgPath} alt="img not found" />
             </a>
@@ -32,7 +32,7 @@ export const ProductInfoSlider = ({ productCard }) => {
         </div>
         <div className="shop-item-content">
           <h6 className="title">
-            <Link href="/shop-details">
+            <Link href={`/infoproduct/${id}`}>
               <a>{name}</a>
             </Link>
           </h6>

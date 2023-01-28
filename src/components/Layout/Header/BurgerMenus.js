@@ -107,15 +107,15 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
                       <a>PQR</a>
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/error">
                       <a>404 Page</a>
                     </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </li>
               <li>
-                <Link href="/tecnolgyaccesories">
+                <Link href="/shop">
                   <a>Accesorios de Tecnologia</a>
                 </Link>
               </li>
