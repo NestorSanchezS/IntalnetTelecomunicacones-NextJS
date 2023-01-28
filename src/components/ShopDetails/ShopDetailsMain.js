@@ -102,7 +102,7 @@ const ShopDetailsMain = () => {
                       </div>
                     </div>
                   </div>
-                  <Link href="/shop-details">
+                  <Link href="#">
                     <a className="btn cart-btn">Agregar al carrito</a>
                   </Link>
                 </div>

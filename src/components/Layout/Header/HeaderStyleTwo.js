@@ -147,11 +147,11 @@ const HeaderTwo = () => {
                     <div className="header-action d-none d-md-block">
                       <ul>
                         <li className="header-shop-cart">
-                          <a href="#!">
+                          {/* <a href="#!">
                             <i className="flaticon-shopping-cart"></i>
                             <span>0</span>
                           </a>
-                          <ShoppingCart />
+                          <ShoppingCart /> */}
                         </li>
                         <li className="header-phone">
                           <div className="icon">
