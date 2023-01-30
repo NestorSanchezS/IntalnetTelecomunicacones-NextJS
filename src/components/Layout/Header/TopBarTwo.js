@@ -28,7 +28,9 @@ const TopHeaderTwo = () => {
               <ul>
                 <li className="header-user-info">
                   <i className="flaticon-businessman"></i>
-                  {/* <Link href="/"><a>Login / Registrarse</a></Link> */}
+                  <Link href="/">
+                    <a>Logins</a>
+                  </Link>
                 </li>
                 <li className="header-social">
                   <a href="#" target="_blank">
