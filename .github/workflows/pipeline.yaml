@@ -20,4 +20,5 @@ jobs:
           echo "${{secrets.AMAZON_SERVER_KEY}}" > server-key.pem
           chmod 600 server-key.pem
       - name: Build and Deploy
+        run: |
           sh deploy.sh
