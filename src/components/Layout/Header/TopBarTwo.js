@@ -10,7 +10,7 @@ const TopHeaderTwo = () => {
             <div className="header-top-left">
               <ul>
                 <li className="d-none d-xxl-flex">
-                  <i className="flaticon-location"></i> Montería - Córdoba,
+                  <i className="flaticon-location"></i> Monteríaaa - Córdoba,
                   Colombia, CO
                 </li>
                 <li className="d-none d-lg-flex">
