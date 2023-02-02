@@ -8,7 +8,7 @@ docker build --no-cache -t nestorsanchezz/intalnet_frontend:$version .
 
 docker tag nestorsanchezz/intalnet_frontend:$version nestorsanchezz/intalnet_frontend:latest
 
-# docker push nestorsanchezz/intalnet_frontend:$version
-# docker push nestorsanchezz/intalnet_frontend:latest
+docker push nestorsanchezz/intalnet_frontend:$version
+docker push nestorsanchezz/intalnet_frontend:latest
 
-# ssh -o StrictHostKeyChecking=no -i ./server-key.pem ubuntu@intalnettelecomunicaciones.com "cd /home/ubuntu/IntalnetConfigServer && make reload-front" 
+ssh -o StrictHostKeyChecking=no -i ./server-key.pem ubuntu@intalnettelecomunicaciones.com "cd /home/ubuntu/IntalnetConfigServer && make reload-front" 
