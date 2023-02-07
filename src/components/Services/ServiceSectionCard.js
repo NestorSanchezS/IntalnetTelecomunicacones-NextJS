@@ -13,7 +13,7 @@ export const ServiceSectionCard = () => {
               </div>
               <div className="services-content">
                 <h3 className="title">
-                  <Link href="/service-details">
+                  <Link href="#">
                     <a>Banda Ancha</a>
                   </Link>
                 </h3>
@@ -32,7 +32,7 @@ export const ServiceSectionCard = () => {
               </div>
               <div className="services-content">
                 <h3 className="title">
-                  <Link href="/service-details">
+                  <Link href="#">
                     <a>WiFi Internet</a>
                   </Link>
                 </h3>
@@ -51,7 +51,7 @@ export const ServiceSectionCard = () => {
               </div>
               <div className="services-content">
                 <h3 className="title">
-                  <Link href="/service-details">
+                  <Link href="#">
                     <a>Canales HD y SD</a>
                   </Link>
                 </h3>
@@ -70,7 +70,7 @@ export const ServiceSectionCard = () => {
               </div>
               <div className="services-content">
                 <h3 className="title">
-                  <Link href="/service-details">
+                  <Link href="#">
                     <a>Televisión Digital</a>
                   </Link>
                 </h3>
