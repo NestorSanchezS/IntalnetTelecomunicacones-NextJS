@@ -161,7 +161,7 @@ const SliderTwo = () => {
                             src="/assets/img/icons/w_check.png"
                             alt="img not found"
                           />{" "}
-                          Canales de Peliculas, Deportes, Infantiles, Religiosos
+                          Canales de Películas, Deportes, Infantiles, Religiosos
                           y mucho más.
                         </li>
                       </ul>
