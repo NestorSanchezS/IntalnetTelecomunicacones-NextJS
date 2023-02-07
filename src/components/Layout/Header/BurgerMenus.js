@@ -136,7 +136,7 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
                 </li>
                 <li>
                   <i className="flaticon-email"></i>{" "}
-                  intalnet.monteria@example.com
+                  intalnet.servicioalcliente@gmail.com
                 </li>
                 <li>
                   <i className="flaticon-clock"></i> Opening Time : 8 AM - 6 PM

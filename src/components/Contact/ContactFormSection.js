@@ -8,7 +8,7 @@ const onSubmit = async (values, actions) => {
   // console.log(values);
   // console.log(actions);
   emailjs
-    .send("service_ii3fhsq", "template_xij9e9k", values, "9lX7hXXub4LjBAc_z")
+    .send("service_wqgnr4m", "template_i30yybn", values, "yJ8FGxMUinNsG2rZ1")
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -136,7 +136,7 @@ const ContactForm = () => {
                           }`}
                           {...getFieldProps("address")}
                         />
-                        <label htmlFor="email">Dirección</label>
+                        <label htmlFor="email">Dirección y Municipio</label>
                         {errors.address && touched.address && (
                           <p className="error">{errors.address}</p>
                         )}
@@ -199,9 +199,7 @@ const ContactForm = () => {
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
-                  <a href="mailto:info@example.com">
-                    intalnet.monteria@gmail.com
-                  </a>
+                  <a href="mailto:info@example.com">teria@gmail.com</a>
                 </li>
                 <li>
                   <i className="flaticon-location"></i>

@@ -11,7 +11,7 @@ const onSubmit = async (values, actions) => {
   // console.log(values);
   // console.log(actions);
   emailjs
-    .send("service_7hlj17d", "template_dozp72v", values, "9lX7hXXub4LjBAc_z")
+    .send("service_p4r91sb", "template_veiyzji", values, "yJ8FGxMUinNsG2rZ1")
     .then((response) => console.log(response))
     .catch((error) => console.log(error));
   await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -126,7 +126,7 @@ export const PqrMain = () => {
                             }`}
                             {...getFieldProps("addresspqr")}
                           />
-                          <label htmlFor="email">Dirección</label>
+                          <label htmlFor="email">Dirección y Municipio</label>
                           {errors.addresspqr && touched.addresspqr && (
                             <p className="error">{errors.addresspqr}</p>
                           )}
@@ -192,7 +192,7 @@ export const PqrMain = () => {
                   <li>
                     <i className="flaticon-email"></i>
                     <a href="mailto:info@example.com">
-                      intalnet.monteria@gmail.com
+                      intalnet.servicioalcliente@gmail.com
                     </a>
                   </li>
                   <li>
