@@ -199,7 +199,9 @@ const ContactForm = () => {
                 </li>
                 <li>
                   <i className="flaticon-email"></i>
-                  <a href="mailto:info@example.com">teria@gmail.com</a>
+                  <a href="mailto:info@example.com">
+                    intalnet.servicioalcliente@gmail.com
+                  </a>
                 </li>
                 <li>
                   <i className="flaticon-location"></i>
