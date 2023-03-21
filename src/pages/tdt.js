@@ -1,17 +1,16 @@
 import React from "react";
-import Header from "../components/Layout/Header/Header";
 import Footer from "../components/Layout/Footer/Footer";
-import ShopMain from "../components/Tdt/TdtMain";
+import ShopMain from "../components/Shop/ShopMain";
 import HeaderTwo from "../components/Layout/Header/HeaderStyleTwo";
 
-const ShopPage = () => {
+const tdt = () => {
   return (
     <React.Fragment>
       <HeaderTwo />
-      <TdtpMain />
+      <ShopMain />
       <Footer />
     </React.Fragment>
   );
 };
 
-export default ShopPage;
+export default tdt;
