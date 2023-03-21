@@ -107,6 +107,11 @@ const BurgerMenus = ({ setMenuOpen, menuOpen }) => {
                       <a>PQR</a>
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/tdt">
+                      <a>TDT</a>
+                    </Link>
+                  </li>
                   {/* <li>
                     <Link href="/error">
                       <a>404 Page</a>

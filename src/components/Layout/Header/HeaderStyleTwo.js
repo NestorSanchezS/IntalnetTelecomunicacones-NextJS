@@ -118,6 +118,11 @@ const HeaderTwo = () => {
                                 <a>PQR</a>
                               </Link>
                             </li>
+                            <li>
+                              <Link href="/tdt">
+                                <a>TDT</a>
+                              </Link>
+                            </li>
                           </ul>
                         </li>
                         <li>
