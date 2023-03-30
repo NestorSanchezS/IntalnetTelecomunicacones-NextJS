@@ -9,6 +9,7 @@ import PricingThree from "./PricingSectionThree";
 import SubscribeTwo from "./SubscribeSectionTwo";
 import Blog from "../Home/BlogSection";
 import SliderTwo from "../Elements/Slider/SliderStyleTwo";
+import Information from "../Common/information";
 const StreamSlider = dynamic(() => import("../Elements/Slider/StreamSlider"), {
   ssr: false,
 });
@@ -53,6 +54,8 @@ const HomeTwoMain = () => {
       {/* tv-start */}
       <SubscribeTwo />
       {/* tv-end */}
+
+      <Information />
 
       {/* frecuenly questions -start */}
       {/* <Faq /> */}

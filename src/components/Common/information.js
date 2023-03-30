@@ -1,74 +1,52 @@
 import React from "react";
 import ModalVideo from "react-modal-video";
 
-export const information = () => {
+const Information = () => {
   return (
-    <section className="inner-services-area pt-120">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-xl-7 col-lg-6 order-0 order-lg-2">
-            <div
-              className="services-inner-img wow fadeInRight"
-              data-wow-delay=".2s"
-            >
-              <img
-                src="/assets/img/images/pricing_item_bg01.jpg"
-                alt="img not found"
-              />
-              <ModalVideo
-                channel="youtube"
-                isOpen={isOpen}
-                videoId="R5ARkEAhI-k"
-                onClose={() => {
-                  openVideoModal();
-                }}
-              />
-              <div className="video-paly">
-                <a
-                  href="#!"
-                  className="popup-video"
-                  onClick={() => {
-                    openVideoModal();
-                  }}
-                >
-                  <i className="fas fa-play"></i>{" "}
-                </a>
+    <React.Fragment>
+      <section className="inner-services-area pt-120 mb-5">
+        <div className="container">
+          <div className="row align-items-center">
+            <div className="col-xl-5 col-lg-6">
+              <div className="section-title mb-30">
+                <h2 className="title">Incremento de tarifas 2023</h2>
+              </div>
+              <div className="services-inner-content">
+                <p className="mb-1">
+                  Debido a los incrementos autorizados por el gobierno y a los
+                  costos que debemos incurrrir para prestar el servicio, nos
+                  vemos en la obligación de aumentar la starifas.
+                </p>
+                <p className="mb-1">
+                  Por eso, queremos contarte que este año a partir de tu factura
+                  emitida en Mayo 2023, veras un incremento el valor del
+                  servicio de internet de <b>$5.000</b>.
+                </p>
+                <p>
+                  Nuestro objetivo sigue siendo ofrecerte un servicio de calidad
+                  y agradecemos de antemano tu <b>confianza</b> y{" "}
+                  <b>comprensión</b>.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-6">
+              <div className="about-img-wrap">
+                <img
+                  src="/assets/img/images/about_img01.jpg"
+                  alt="img not found"
+                />
+                <img
+                  src="/assets/img/images/about_img02.jpg"
+                  className="main-img"
+                  alt="img not found"
+                />
               </div>
             </div>
           </div>
-          <div className="col-xl-5 col-lg-6">
-            <div className="section-title mb-30">
-              <h2 className="title">
-                Encuentra Las Mejores Soluciones de Red con Nosotros
-              </h2>
-            </div>
-            <div className="services-inner-content">
-              <p>
-                Internet residencial para conectar su computadora, celular y
-                otros dispositivos en su hogar simultáneamente
-              </p>
-              <ul className="services-inner-list">
-                <li>
-                  <img src="/assets/img/icons/check.png" alt="img not found" />{" "}
-                  Garantizamos un servicio de calidad.
-                </li>
-                <li>
-                  <img src="/assets/img/icons/check.png" alt="img not found" />{" "}
-                  Equipo Técnico Expecializado.
-                </li>
-                <li>
-                  <img src="/assets/img/icons/check.png" alt="img not found" />{" "}
-                  Tecnologia Avanzada
-                </li>
-                <li>
-                  <img src="/assets/img/icons/check.png" alt="img not found" />{" "}
-                  Internet Por Fibra Optica.
-                </li>
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </React.Fragment>
   );
 };
+
+export default Information;
