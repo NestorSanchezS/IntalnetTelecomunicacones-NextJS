@@ -15,7 +15,7 @@ const Information = () => {
                 <p className="mb-1">
                   Debido a los incrementos autorizados por el gobierno y a los
                   costos que debemos incurrrir para prestar el servicio, nos
-                  vemos en la obligación de aumentar la starifas.
+                  vemos en la obligación de aumentar las tarifas.
                 </p>
                 <p className="mb-1">
                   Por eso, queremos contarte que este año a partir de tu factura
