@@ -105,7 +105,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a>
-                      Calle 49 No. 45-00 Barrio Alfonso López.{" "}
+                      Calle 49 No 45-00 Barrio Alfonso López.{" "}
                       <strong>San Pedro</strong>
                     </a>
                   </li>
