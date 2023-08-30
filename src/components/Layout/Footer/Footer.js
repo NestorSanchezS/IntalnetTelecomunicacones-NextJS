@@ -49,9 +49,9 @@ const Footer = () => {
                       <i className="flaticon-support"></i>
                     </div>
                     <div className="content">
-                      <span>Los Córdoba - córdoba</span>
+                      <span>San Pedro de Urabá</span>
                       <h6 className="title">
-                        <a href="tel:123">(+57) 314 8030478</a>
+                        <a href="tel:123">(+57) 313 5745320</a>
                       </h6>
                     </div>
                   </div>
@@ -105,8 +105,8 @@ const Footer = () => {
                   </li>
                   <li>
                     <a>
-                      Media cuadra del parque princpal.{" "}
-                      <strong>Los Córdoba</strong>
+                      Calle 49 No. 45-00 Barrio Alfonso López.{" "}
+                      <strong>San Pedro</strong>
                     </a>
                   </li>
                 </ul>
