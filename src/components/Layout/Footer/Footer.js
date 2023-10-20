@@ -54,6 +54,12 @@ const Footer = () => {
                         <a href="tel:123">(+57) 313 5745320</a>
                       </h6>
                     </div>
+                    <div className="content">
+                      <span>Puerto Libertador</span>
+                      <h6 className="title">
+                        <a href="tel:123">(+57) 313 5745320</a>
+                      </h6>
+                    </div>
                   </div>
                   {/* <h6 className="title">Contact info</h6>
                                     <p>Street House, Greater London NW1 8JR, UK</p> */}
