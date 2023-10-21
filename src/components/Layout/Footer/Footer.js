@@ -49,7 +49,7 @@ const Footer = () => {
                       <i className="flaticon-support"></i>
                     </div>
                     <div className="content">
-                      <span>San Pedro de Urabá</span>
+                      <span>San Pedro de Urabá - Antioquia</span>
                       <h6 className="title">
                         <a href="tel:123">(+57) 313 5745320</a>
                       </h6>
@@ -60,7 +60,7 @@ const Footer = () => {
                       <i className="flaticon-support"></i>
                     </div>
                     <div className="content">
-                      <span>Puerto Libertador</span>
+                      <span>Puerto Libertador - Córdoba</span>
                       <h6 className="title">
                         <a href="tel:123">(+57) 313 5745320</a>
                       </h6>
@@ -118,6 +118,12 @@ const Footer = () => {
                     <a>
                       Calle 49 No 45-00 Barrio Alfonso López.{" "}
                       <strong>San Pedro</strong>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                    Carrera 10 # 11-20 Barrio Camilo Jiménez.{" "}
+                      <strong>Puerto Libertador</strong>
                     </a>
                   </li>
                 </ul>
