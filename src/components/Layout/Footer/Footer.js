@@ -54,6 +54,11 @@ const Footer = () => {
                         <a href="tel:123">(+57) 313 5745320</a>
                       </h6>
                     </div>
+                  </div>
+                  <div className="footer-call">
+                    <div className="icon">
+                      <i className="flaticon-support"></i>
+                    </div>
                     <div className="content">
                       <span>Puerto Libertador</span>
                       <h6 className="title">
