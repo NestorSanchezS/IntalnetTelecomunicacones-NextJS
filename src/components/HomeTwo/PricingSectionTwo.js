@@ -14,8 +14,8 @@ const PricingTwo = () => {
               }}
             >
               <div className="pricing-two-content">
-                <h3 className="title">Somos una Empresa</h3>
-                <p>Que vino a darte el mejor entretenimiento</p>
+                <h6 className="title">Somos una empresa 100% Cordobesa</h6>
+                <p>que ofrece soluciones de conectividad, entretenumiento y servicios de telecomunicaciones.</p>
                 <h3 className="price">
                   <sup>$</sup>
                   <span>
