@@ -13,7 +13,7 @@ const FooterBottom = () => {
                     </div>
                     <div className="col-md-8">
                         <div className="copyright-text text-center text-md-end">
-                            <p>Copyrighted 2023_INTALNET - Desarollado por Néstor Sánchez</p>
+                            <p>Copyrighted 2023_INTALNET - Desarrollado por Néstor Sánchez S.</p>
                         </div>
                     </div>
                 </div>
