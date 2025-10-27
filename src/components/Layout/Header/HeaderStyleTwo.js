@@ -163,11 +163,14 @@ const HeaderTwo = () => {
                             <i className="fal fa-mobile-android"></i>
                           </div>
                           <div className="content">
-                            <span>Servicio al cliente:</span>
+                            <span>Atención solo vía WhatsApp:</span>
                             <h5 className="number">
-                              <a href="tel:123">+57 314 8042601 </a>
+                              <a href="https://wa.me/573148042601" target="_blank" rel="noopener noreferrer">
+                                +57 314 8042601
+                              </a>
                             </h5>
                           </div>
+
                         </li>
                         {/* <li className="header-btn">
                           <Link href="/contact">

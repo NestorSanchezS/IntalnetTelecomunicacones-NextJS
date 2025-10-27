@@ -47,14 +47,7 @@ const AboutMain = () => {
               </div>
               <div className="video-content-wrap">
                 <p>
-                  Brindar a los usuarios el servicio de conexión para el acceso
-                  a internet, a través de equipos altamente tecnológicos y
-                  confiables, con el fin de garantizar la calidad, velocidad y
-                  oportunidad del servicio, llegando a los hogares,
-                  instituciones publicas, empresas privadas, y todos los
-                  sectores que requieran alinearse e ingresar a la nueva era
-                  digital, creándole a la sociedad oportunidades de acceso a
-                  tecnologías de la información y comunicación
+                En Intalnet brindamos soluciones integrales de conectividad, entretenimiento y telecomunicaciones con altos estándares de calidad, impulsando la transformación digital de nuestros clientes. Nos enfocamos en ofrecer experiencias confiables e innovadoras, a través de tecnología de vanguardia y un equipo humano comprometido y altamente capacitado. Nuestra vocación de servicio nos impulsa a generar oportunidades de acceso a las tecnologías de la información y la comunicación, contribuyendo al desarrollo social y al fortalecimiento de los diferentes sectores en la nueva era digital.
                 </p>
               </div>
             </div>
@@ -64,10 +57,7 @@ const AboutMain = () => {
               </div>
               <div className="video-content-wrap">
                 <p>
-                  Ser la empresa líder en la región del Alto Sinú, con
-                  tecnología a la vanguardia de las telecomunicaciones,
-                  reconocidos por la calidad del servicio, la excelencia y el
-                  acompañamiento permanente..
+                Ser líderes en el mercado de las telecomunicaciones, reconocidos por nuestra innovación, calidad y compromiso con la satisfacción de nuestros clientes. Aspiramos a consolidarnos como una empresa sostenible y rentable, que impulsa la transformación digital en todos los sectores de la sociedad, generando confianza, desarrollo y oportunidades a través de soluciones tecnológicas de vanguardia y un servicio humano excepcional
                 </p>
               </div>
             </div>
