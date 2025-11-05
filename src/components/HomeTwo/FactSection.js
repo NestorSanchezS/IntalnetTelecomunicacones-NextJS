@@ -36,9 +36,9 @@ const Fact = () => {
                 planes desde lo mas básicos hasta los más avanzados. Todo por
                 fibra óptica.
               </p>
-              {/* Asume que CounterStyleTwo se adapta bien o se actualizará */}
               <div className="counter-area-modern">
-                <CounterStyleTwo />
+              {/* Asume que CounterStyleTwo se adapta bien o se actualizará <CounterStyleTwo /> */}
+                
               </div>
               
               <Link href="/contact">
