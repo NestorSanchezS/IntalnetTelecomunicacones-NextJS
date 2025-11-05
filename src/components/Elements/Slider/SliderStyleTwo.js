@@ -8,7 +8,7 @@ const SliderTwo = () => {
   function SampleNextArrow(props) {
     const { className, onClick } = props;
     return (
-      <button type="button" onClick={onClick} className={className}>
+      <button type="button" onClick={onClick} className={`${className} custom-arrow custom-next-arrow`}>
         <i className="far fa-chevron-right"></i>
       </button>
     );
@@ -17,7 +17,7 @@ const SliderTwo = () => {
   function SamplePrevArrow(props) {
     const { className, onClick } = props;
     return (
-      <button type="button" onClick={onClick} className={className}>
+      <button type="button" onClick={onClick} className={`${className} custom-arrow custom-prev-arrow`}>
         <i className="far fa-chevron-left"></i>
       </button>
     );
@@ -26,17 +26,20 @@ const SliderTwo = () => {
   const settings = {
     autoplay: true,
     autoplaySpeed: 10000,
-    dots: false,
-    fade: true,
-    arrows: false,
+    dots: true, // Activado para mostrar indicadores
+    fade: false, // Cambiado a false para animación de deslizamiento
+    arrows: true, // Activado para mostrar flechas
+    speed: 800, // Velocidad de transición en ms
+    slidesToShow: 1,
+    slidesToScroll: 1,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 767,
         settings: {
-          dots: false,
-          arrows: false,
+          dots: true,
+          arrows: false, // En móvil solo dots
         },
       },
     ],
@@ -184,6 +187,102 @@ const SliderTwo = () => {
       }
     }
 
+    /* Estilos para las flechas de navegación */
+    .custom-arrow {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.15) !important;
+      border-radius: 50%;
+      display: flex !important;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: all 0.3s ease;
+      border: 2px solid rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(10px);
+    }
+
+    .custom-arrow::before {
+      display: none;
+    }
+
+    .custom-arrow i {
+      color: white;
+      font-size: 1.2rem;
+      filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    }
+
+    .custom-arrow:hover {
+      background: rgba(0, 122, 255, 0.3) !important;
+      transform: scale(1.1);
+      box-shadow: 0 0 20px rgba(0, 122, 255, 0.6);
+      border-color: rgba(0, 122, 255, 0.8);
+    }
+
+    .custom-prev-arrow {
+      left: 30px !important;
+    }
+
+    .custom-next-arrow {
+      right: 30px !important;
+    }
+
+    /* Estilos para los dots (indicadores) */
+    .slick-dots {
+      bottom: 30px;
+      z-index: 10;
+    }
+
+    .slick-dots li {
+      margin: 0 8px;
+    }
+
+    .slick-dots li button {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.5);
+      border: 2px solid rgba(255, 255, 255, 0.8);
+      transition: all 0.3s ease;
+    }
+
+    .slick-dots li button::before {
+      display: none;
+    }
+
+    .slick-dots li:hover button {
+      background: rgba(0, 122, 255, 0.8);
+      transform: scale(1.2);
+    }
+
+    .slick-dots li.slick-active button {
+      background: #007aff;
+      width: 40px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 122, 255, 0.8);
+    }
+
+    /* Indicador de progreso de autoplay */
+    @keyframes progressBar {
+      0% {
+        width: 0%;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    .slick-dots li.slick-active button::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.9);
+      animation: progressBar 10s linear;
+      border-radius: 10px;
+    }
+
     .slider-services-list li {
       animation: slideUpFade 0.6s ease-out forwards;
       opacity: 0;
@@ -302,7 +401,6 @@ const SliderTwo = () => {
       }
     }
 
-
     @media (max-width: 767px) {
       .banner-content {
         padding: 25px !important;
@@ -314,6 +412,23 @@ const SliderTwo = () => {
 
       .intalito-image:hover {
         transform: scale(1.05);
+      }
+
+      .custom-arrow {
+        width: 40px;
+        height: 40px;
+      }
+
+      .custom-prev-arrow {
+        left: 10px !important;
+      }
+
+      .custom-next-arrow {
+        right: 10px !important;
+      }
+
+      .slick-dots {
+        bottom: 15px;
       }
     }
 
