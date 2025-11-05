@@ -1,0 +1,90 @@
+.whatsappButton {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 1000;
+
+  // Tamaño para pantallas grandes
+  width: 280px;
+  height: 280px;
+
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  // ******* SIN SOMBRAS *******
+  box-shadow: none; // Aseguramos que no haya sombra base
+  // ******* FIN SIN SOMBRAS *******
+
+  animation: floatEffect 3s infinite ease-in-out; // Usamos un nombre más genérico
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.02) translateY(-3px);
+    animation-play-state: paused;
+    box-shadow: none; // Aseguramos que no haya sombra en hover
+  }
+
+  // ******* MEDIA QUERY PARA MÓVILES *******
+  @media (max-width: 768px) { // Aplica a pantallas de 768px o menos
+    width: 200px;
+    height: 200px;
+    bottom: 10px;
+    right: 10px;
+    
+    // Si la animación es demasiado para móviles, puedes ajustarla o quitarla
+    animation: floatEffectMobile 2.5s infinite ease-in-out; 
+
+    &:hover {
+      transform: scale(1.05) translateY(-2px); // Un poco de zoom en hover para móviles
+    }
+  }
+
+  @media (max-width: 480px) { // Para pantallas aún más pequeñas, como teléfonos muy pequeños
+    width: 200px;
+    height: 200px;
+    bottom: 10px;
+    right: 10px;
+  }
+  // ******* FIN MEDIA QUERY *******
+}
+
+.whatsappImage {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 0;
+}
+
+// ******* ANIMACIÓN SIN SOMBRAS *******
+@keyframes floatEffect { // Renombrado a 'floatEffect'
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: none; // Aseguramos que no haya sombra animada
+  }
+  50% {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: none; // Aseguramos que no haya sombra animada
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: none; // Aseguramos que no haya sombra animada
+  }
+}
+
+// Animación específica para móviles (más sutil o rápida si es necesario)
+@keyframes floatEffectMobile {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.02); // Menor elevación y escala para móviles
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+// ******* FIN ANIMACIÓN SIN SOMBRAS *******

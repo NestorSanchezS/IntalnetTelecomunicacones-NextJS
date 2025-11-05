@@ -15,7 +15,7 @@ const TopHeaderTwo = () => {
                 </li>
                 <li className="d-none d-lg-flex">
                   <i className="flaticon-email"></i>{" "}
-                  intalnet.servicioalcliente@gmail.com
+                  servicioalcliente@intalnet.com
                 </li>
                 <li className="d-xxxxl-flex">
                   <i className="flaticon-clock"></i> Horario de apertura : 8: AM
