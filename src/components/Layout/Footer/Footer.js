@@ -123,7 +123,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <span>San Pedro:</span>
-                      <a href="tel:+573135745320">(+57) 313 5745330</a> {/* Corrección de un número */}
+                      <a href="tel:+573135745320">(+57) 321 7915903</a> {/* Corrección de un número */}
                     </li>
                     <li>
                       <span>Puerto Libertador:</span>

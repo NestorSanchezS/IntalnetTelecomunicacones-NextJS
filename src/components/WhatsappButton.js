@@ -1,6 +1,4 @@
 import React from 'react';
-// Ya no necesitamos FaWhatsapp si vamos a usar una imagen
-// import { FaWhatsapp } from 'react-icons/fa'; 
 import styles from './WhatsappButton.module.scss'; // Usaremos módulos SCSS
 
 const WhatsappButton = () => {
@@ -16,7 +14,13 @@ const WhatsappButton = () => {
       rel="noopener noreferrer"
       aria-label="Contactar por WhatsApp"
     >
+      {/* La imagen de fondo */}
       <img src={imageSrc} alt="WhatsApp Chat" className={styles.whatsappImage} />
+      
+      {/* El "div invisible redondo". 
+        Este es el ÚNICO elemento que recibirá eventos del mouse.
+      */}
+      <div className={styles.hoverTrigger}></div>
     </a>
   );
 };

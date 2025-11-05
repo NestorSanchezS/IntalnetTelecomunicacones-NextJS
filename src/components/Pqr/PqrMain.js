@@ -188,11 +188,12 @@ export const PqrMain = () => {
                   <li>
                     <i className="fas fa-phone-alt"></i>
                     <a href="tel:123">+57 314 8042601</a>
+                    
                   </li>
                   <li>
                     <i className="flaticon-email"></i>
                     <a href="mailto:info@example.com">
-                      intalnet.servicioalcliente@gmail.com
+                      pqr@intalnet.com
                     </a>
                   </li>
                   <li>

@@ -12,44 +12,49 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  
+  // ¡CLAVE 1!
+  // El contenedor "ignora" el mouse. 
+  // No puede ser clickeado o hovereado directamente.
+  pointer-events: none;
 
-  // ******* SIN SOMBRAS *******
-  box-shadow: none; // Aseguramos que no haya sombra base
-  // ******* FIN SIN SOMBRAS *******
+  // Esto es necesario para que el .hoverTrigger (position: absolute)
+  // se posicione relativo a este contenedor.
+  // 'position: fixed' ya crea un contexto de posicionamiento,
+  // así que no necesitamos 'position: relative'.
 
-  animation: floatEffect 3s infinite ease-in-out; // Usamos un nombre más genérico
-
+  box-shadow: none;
+  animation: floatEffect 3s infinite ease-in-out;
   transition: transform 0.3s ease;
 
+  // ¡CLAVE 2!
+  // Esta regla :hover se activará, pero SÓLO cuando un hijo
+  // con "pointer-events: auto" (nuestro .hoverTrigger) sea hovereado.
   &:hover {
     transform: scale(1.02) translateY(-3px);
     animation-play-state: paused;
-    box-shadow: none; // Aseguramos que no haya sombra en hover
+    box-shadow: none;
   }
 
-  // ******* MEDIA QUERY PARA MÓVILES *******
-  @media (max-width: 768px) { // Aplica a pantallas de 768px o menos
+  // Media queries (sin cambios)
+  @media (max-width: 768px) {
     width: 200px;
     height: 200px;
     bottom: 10px;
     right: 10px;
-    
-    // Si la animación es demasiado para móviles, puedes ajustarla o quitarla
     animation: floatEffectMobile 2.5s infinite ease-in-out; 
 
     &:hover {
-      transform: scale(1.05) translateY(-2px); // Un poco de zoom en hover para móviles
+      transform: scale(1.05) translateY(-2px);
     }
   }
 
-  @media (max-width: 480px) { // Para pantallas aún más pequeñas, como teléfonos muy pequeños
+  @media (max-width: 480px) {
     width: 200px;
     height: 200px;
     bottom: 10px;
     right: 10px;
   }
-  // ******* FIN MEDIA QUERY *******
 }
 
 .whatsappImage {
@@ -57,34 +62,71 @@
   height: 100%;
   object-fit: contain;
   border-radius: 0;
+
+  // ¡CLAVE 3!
+  // La imagen también ignora el mouse.
+  pointer-events: none;
 }
 
-// ******* ANIMACIÓN SIN SOMBRAS *******
-@keyframes floatEffect { // Renombrado a 'floatEffect'
+// ¡CLAVE 4! Este es tu div invisible
+.hoverTrigger {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  // --- ¡AJUSTA ESTO! ---
+  // Define el tamaño de tu círculo de hover.
+  // 70% del contenedor (280px) es un círculo de 196px.
+  // Ajusta este porcentaje para que coincida con la parte
+  // de la imagen que quieres que sea "hoverable".
+  width: 70%;
+  height: 70%;
+  // --- FIN DE AJUSTE ---
+
+  // Lo hace redondo
+  border-radius: 100%;
+
+  // Asegura que esté por encima de la imagen
+  z-index: 2;
+  
+  // ¡CLAVE 5!
+  // Reactiva los eventos del mouse SÓLO para este elemento.
+  pointer-events: auto;
+  
+  // Mantenemos el cursor de enlace
+  cursor: pointer;
+
+  // --- PARA DEPURAR ---
+  // Descomenta la siguiente línea para ver tu círculo rojo
+  // background-color: rgba(255, 0, 0, 0.5);
+}
+
+
+// Animaciones (sin cambios)
+@keyframes floatEffect {
   0% {
     transform: translateY(0) scale(1);
-    box-shadow: none; // Aseguramos que no haya sombra animada
+    box-shadow: none;
   }
   50% {
     transform: translateY(-12px) scale(1.03);
-    box-shadow: none; // Aseguramos que no haya sombra animada
+    box-shadow: none;
   }
   100% {
     transform: translateY(0) scale(1);
-    box-shadow: none; // Aseguramos que no haya sombra animada
+    box-shadow: none;
   }
 }
 
-// Animación específica para móviles (más sutil o rápida si es necesario)
 @keyframes floatEffectMobile {
   0% {
     transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-8px) scale(1.02); // Menor elevación y escala para móviles
+    transform: translateY(-8px) scale(1.02);
   }
   100% {
     transform: translateY(0) scale(1);
   }
 }
-// ******* FIN ANIMACIÓN SIN SOMBRAS *******
