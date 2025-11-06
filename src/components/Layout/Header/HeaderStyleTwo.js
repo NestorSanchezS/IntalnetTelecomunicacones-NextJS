@@ -21,6 +21,12 @@ const INFO_MENU_ITEMS = [
   { href: "/internetsano", label: "Internet Sano" },
   { href: "/pqr", label: "PQR" },
   { href: "/tdt", label: "TDT" },
+
+  { href: "/ley-1336-2009", label: "LEY 1336 DE 2009" },
+  { href: "/seguridad-en-la-red", label: "Seguridad en la Red" },
+  { href: "/politica-tratamiento-datos", label: "Política De Tratamiento De Datos" },
+  { href: "/como-llegamos-a-tu-hogar", label: "Como Llegamos a tu Hogar" },
+  { href: "/regimen-proteccion-usuario", label: "Regimen de Proteccion del Usuario" },
 ];
 
 const MAIN_MENU_ITEMS = [
