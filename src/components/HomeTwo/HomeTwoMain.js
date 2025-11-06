@@ -25,7 +25,7 @@ const Faq = dynamic(() => import("../Home/FaqSection"), {
 const HomeTwoMain = () => {
   return (
     <main>
-      {/* slider-area-start */}
+      {/* slider-area-start */}      
       <SliderTwo />
       {/* pricing-area-end */}
 
