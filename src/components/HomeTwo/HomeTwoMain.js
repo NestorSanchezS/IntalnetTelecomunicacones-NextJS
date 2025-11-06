@@ -10,6 +10,8 @@ import SubscribeTwo from "./SubscribeSectionTwo";
 import Blog from "../Home/BlogSection";
 import SliderTwo from "../Elements/Slider/SliderStyleTwo";
 import Information from "../Common/information";
+import InformacionLegal from "./InformacionLegal";
+
 const StreamSlider = dynamic(() => import("../Elements/Slider/StreamSlider"), {
   ssr: false,
 });
@@ -38,6 +40,7 @@ const HomeTwoMain = () => {
       {/* explore our intalnet Services -start */}
       <ServiceTwo />
       {/* explore our intalnet Services -end */}
+      <InformacionLegal />
 
       {/* speed test-start */}
       <SpeacialOfferTwo />
@@ -54,8 +57,6 @@ const HomeTwoMain = () => {
       {/* tv-start */}
       <SubscribeTwo />
       {/* tv-end */}
-
-      <Information />
 
       {/* frecuenly questions -start */}
       {/* <Faq /> */}
