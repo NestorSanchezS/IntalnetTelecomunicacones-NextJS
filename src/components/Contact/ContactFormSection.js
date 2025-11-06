@@ -1,21 +1,50 @@
-import React from "react";
+import React, { useState } from "react"; // <-- 1. Importar useState
 import Link from "next/link";
 import { Formik } from "formik";
 import { formContactusSchema } from "../../schemas";
 import emailjs from "@emailjs/browser";
 
-const onSubmit = async (values, actions) => {
-  // console.log(values);
-  // console.log(actions);
-  emailjs
-    .send("service_wqgnr4m", "template_i30yybn", values, "yJ8FGxMUinNsG2rZ1")
-    .then((response) => console.log(response))
-    .catch((error) => console.log(error));
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  actions.resetForm();
+// Los estilos para el mensaje de éxito
+const successMessageStyle = {
+  backgroundColor: "#d4edda",
+  color: "#155724",
+  border: "1px solid #c3e6cb",
+  padding: "15px",
+  borderRadius: "5px",
+  margin: "10px 0",
+  textAlign: "center",
+  fontWeight: "bold",
 };
 
 const ContactForm = () => {
+  // <-- 2. Estado para el mensaje de éxito
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // <-- 3. Mover onSubmit dentro del componente
+  const onSubmit = async (values, actions) => {
+    try {
+      await emailjs.send(
+        "service_qtgrjty",
+        "template_3q5q9ta",
+        values,
+        "4LKILnUTxxRAYn2YR"
+      );
+
+      // Éxito:
+      setIsSubmitted(true); // Mostrar el mensaje de éxito
+      actions.resetForm(); // Limpiar el formulario
+
+      // Ocultar el mensaje después de 5 segundos
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+      
+    } catch (error) {
+      console.log("Error al enviar el email:", error);
+      // Aquí podrías poner un estado para un mensaje de error si quisieras
+    }
+  };
+
   return (
     <section className="contact-area pt-115 pb-120">
       <div className="container">
@@ -25,6 +54,13 @@ const ContactForm = () => {
               <h3 className="title">CONECTATE AHORA</h3>
             </div>
 
+            {/* <-- 4. Mensaje de éxito (se muestra condicionalmente) --> */}
+            {isSubmitted && (
+              <div style={successMessageStyle}>
+                ¡Mensaje enviado con éxito! Te contactaremos pronto.
+              </div>
+            )}
+
             <Formik
               initialValues={{
                 servi: "",
@@ -33,6 +69,7 @@ const ContactForm = () => {
                 phone: "",
                 email: "",
                 message: "",
+                privacy: false, // <-- 5. Añadir el campo de privacidad
               }}
               validationSchema={formContactusSchema}
               onSubmit={onSubmit}
@@ -50,6 +87,8 @@ const ContactForm = () => {
                   action="/"
                 >
                   <div className="row">
+                    {/* ... (Todos tus campos de input: name, phone, email, etc.) ... */}
+                    {/* No es necesario copiar, solo es para referencia */}
                     <div className="col-md-6">
                       <div className="form-grp">
                         <input
@@ -61,7 +100,6 @@ const ContactForm = () => {
                           }`}
                           {...getFieldProps("name")}
                         />
-
                         <label htmlFor="name">Nombres</label>
                         {errors.name && touched.name && (
                           <p className="error">{errors.name}</p>
@@ -96,7 +134,6 @@ const ContactForm = () => {
                           }`}
                           {...getFieldProps("email")}
                         />
-
                         <label htmlFor="email">Email</label>
                         {errors.email && touched.email && (
                           <p className="error">{errors.email}</p>
@@ -157,14 +194,19 @@ const ContactForm = () => {
                       <p className="error">{errors.message}</p>
                     )}
                   </div>
-                  <p className="contact-form-check">
+
+                  {/* <-- 6. Bloque de Checkbox actualizado --> */}
+                  <div className="contact-form-check">
                     <input
                       type="checkbox"
-                      className="form-check-input"
-                      id="cookies-consent"
+                      className={`form-check-input ${
+                        errors.privacy && touched.privacy ? "input-error" : ""
+                      }`}
+                      id="privacy" // <-- Cambiar ID
+                      {...getFieldProps("privacy")} // <-- Conectar a Formik
                     />
                     <label
-                      htmlFor="cookies-consent"
+                      htmlFor="privacy" // <-- Cambiar htmlFor
                       className="form-check-label"
                     >
                       Acepto que mis datos enviados se recopilen y almacenen.
@@ -172,12 +214,20 @@ const ContactForm = () => {
                         <a> Privacy Policy</a>
                       </Link>
                     </label>
-                  </p>
+                  </div>
+                  
+                  {/* <-- 7. Mostrar error del checkbox --> */}
+                  {errors.privacy && touched.privacy && (
+                    <p className="error" style={{marginTop: "5px"}}>{errors.privacy}</p>
+                  )}
+
+
                   <button
                     type="submit"
                     id=" button_submit-disabled"
                     className="btn"
                     disabled={isSubmitting}
+                    style={{marginTop: "15px"}} // <-- Un poco de espacio
                   >
                     Enviar
                   </button>
@@ -185,6 +235,8 @@ const ContactForm = () => {
               )}
             </Formik>
           </div>
+          
+          {/* ... (Tu columna derecha de "col-lg-4" no cambia) ... */}
           <div className="col-lg-4">
             <div className="contact-info-wrap">
               <h3 className="contact-info-title">Contacto Directo</h3>
@@ -200,7 +252,7 @@ const ContactForm = () => {
                 <li>
                   <i className="flaticon-email"></i>
                   <a href="mailto:info@example.com">
-                  servicioalcliente@intalnet.com
+                    servicioalcliente@intalnet.com
                   </a>
                 </li>
                 <li>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; // <-- 1. Importar useState
 import { Formik } from "formik";
 import Link from "next/link";
 import emailjs from "@emailjs/browser";
@@ -7,18 +7,46 @@ import Breadcrumb from "../Common/Breadcumb";
 import { ServiceSectionCard } from "../Services/ServiceSectionCard";
 import Brand from "../Home/BrandSection";
 
-const onSubmit = async (values, actions) => {
-  // console.log(values);
-  // console.log(actions);
-  emailjs
-    .send("service_p4r91sb", "template_veiyzji", values, "yJ8FGxMUinNsG2rZ1")
-    .then((response) => console.log(response))
-    .catch((error) => console.log(error));
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  actions.resetForm();
+// Los estilos para el mensaje de éxito
+const successMessageStyle = {
+  backgroundColor: "#d4edda",
+  color: "#155724",
+  border: "1px solid #c3e6cb",
+  padding: "15px",
+  borderRadius: "5px",
+  margin: "10px 0",
+  textAlign: "center",
+  fontWeight: "bold",
 };
 
 export const PqrMain = () => {
+  // <-- 2. Estado para el mensaje de éxito
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  // <-- 3. Mover onSubmit dentro del componente
+  const onSubmit = async (values, actions) => {
+    try {
+      await emailjs.send(
+        "service_qtgrjty", // Tu Service ID
+        "template_3qxrd59", // Tu Template ID de PQR
+        values,
+        "4LKILnUTxxRAYn2YR" // Tu Public Key
+      );
+
+      // Éxito:
+      setIsSubmitted(true); // Mostrar el mensaje de éxito
+      actions.resetForm(); // Limpiar el formulario
+
+      // Ocultar el mensaje después de 5 segundos
+      setTimeout(() => {
+        setIsSubmitted(false);
+      }, 5000);
+
+    } catch (error) {
+      console.log("FALLÓ...", error);
+    }
+  };
+
   return (
     <main>
       <Breadcrumb pageTitle="PQR´S" />
@@ -31,6 +59,13 @@ export const PqrMain = () => {
                 <h3 className="title">Peticiones, Quejas y Reclamos</h3>
               </div>
 
+              {/* <-- 4. Mensaje de éxito (se muestra condicionalmente) --> */}
+              {isSubmitted && (
+                <div style={successMessageStyle}>
+                  ¡PQR enviada con éxito! Te contactaremos pronto.
+                </div>
+              )}
+
               <Formik
                 initialValues={{
                   addresspqr: "",
@@ -38,6 +73,7 @@ export const PqrMain = () => {
                   phonepqr: "",
                   emailpqr: "",
                   messagepqr: "",
+                  privacy_pqr: false, // <-- 5. Añadir el campo de privacidad
                 }}
                 validationSchema={formPqrSchema}
                 onSubmit={onSubmit}
@@ -55,6 +91,7 @@ export const PqrMain = () => {
                     action="/"
                   >
                     <div className="row">
+                      {/* ... (Todos tus campos: namepqr, phonepqr, etc.) ... */}
                       <div className="col-md-6">
                         <div className="form-grp">
                           <input
@@ -149,14 +186,19 @@ export const PqrMain = () => {
                         <p className="error">{errors.messagepqr}</p>
                       )}
                     </div>
+                    
+                    {/* <-- 6. Bloque de Checkbox actualizado --> */}
                     <p className="contact-form-check">
                       <input
                         type="checkbox"
-                        className="form-check-input"
-                        id="cookies-consent"
+                        className={`form-check-input ${
+                          errors.privacy_pqr && touched.privacy_pqr ? "input-error" : ""
+                        }`}
+                        id="privacy_pqr" // <-- ID único
+                        {...getFieldProps("privacy_pqr")} // <-- Conectar a Formik
                       />
                       <label
-                        htmlFor="cookies-consent"
+                        htmlFor="privacy_pqr" // <-- Conectar al ID
                         className="form-check-label"
                       >
                         Acepto que mis datos enviados se recopilen y almacenen.
@@ -165,11 +207,18 @@ export const PqrMain = () => {
                         </Link>
                       </label>
                     </p>
+
+                    {/* <-- 7. Mostrar error del checkbox --> */}
+                    {errors.privacy_pqr && touched.privacy_pqr && (
+                      <p className="error" style={{marginTop: "5px"}}>{errors.privacy_pqr}</p>
+                    )}
+
                     <button
                       type="submit"
                       id=" button_submit-disabled"
                       className="btn"
                       disabled={isSubmitting}
+                      style={{marginTop: "15px"}} // <-- Espacio
                     >
                       Enviar
                     </button>
@@ -177,6 +226,8 @@ export const PqrMain = () => {
                 )}
               </Formik>
             </div>
+
+            {/* ... (Tu columna derecha "col-lg-4" no cambia) ... */}
             <div className="col-lg-4">
               <div className="contact-info-wrap">
                 <h3 className="contact-info-title">Contacto Directo</h3>
@@ -188,13 +239,10 @@ export const PqrMain = () => {
                   <li>
                     <i className="fas fa-phone-alt"></i>
                     <a href="tel:123">+57 314 8042601</a>
-                    
                   </li>
                   <li>
                     <i className="flaticon-email"></i>
-                    <a href="mailto:info@example.com">
-                      pqr@intalnet.com
-                    </a>
+                    <a href="mailto:info@example.com">pqr@intalnet.com</a>
                   </li>
                   <li>
                     <i className="flaticon-location"></i>
