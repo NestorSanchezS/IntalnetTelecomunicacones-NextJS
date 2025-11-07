@@ -75,9 +75,9 @@ const PricingTwo = () => {
                 </div>
                 <div className="text-background price-container">
                   <h3 className="price bounce-in">
-                    <sup>$</sup>90
+                    <sup>$</sup>65
                     <span>
-                      From <br /> /Month
+                      Por <br /> /Mes
                     </span>
                   </h3>
                 </div>
