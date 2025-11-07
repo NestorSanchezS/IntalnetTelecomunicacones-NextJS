@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const PricingTwo = () => {
   return (
-    <section className="pricing-two-area">
+    <section className="pricing-two-area mt-5">
       <div className="container">
         <div className="row justify-content-center">
           {/* ================================================================
