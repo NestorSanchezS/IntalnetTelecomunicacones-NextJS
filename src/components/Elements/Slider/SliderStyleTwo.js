@@ -699,7 +699,7 @@ const SliderTwo = () => {
                     >
                       <div className="intalito-image">
                         <Image
-                          src="/assets/intalito2.png"
+                          src="/assets/img/slider/intalito2.png"
                           alt="Intalito, mascota de Intalnet"
                           width={400}
                           height={400}
