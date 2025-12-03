@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './WhatsappButton.module.scss'; // Usaremos módulos SCSS
 
 const WhatsappButton = () => {
-  const phoneNumber = '573148042601'; // Tu número sin el '+'
+  const phoneNumber = '573225802429'; // Tu número sin el '+'
   const whatsappLink = `https://wa.me/${phoneNumber}`;
   const imageSrc = '/assets/intalito5.png'; // La ruta a tu imagen
 

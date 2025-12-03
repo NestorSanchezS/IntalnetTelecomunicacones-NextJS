@@ -11,7 +11,7 @@ import { HeaderCitie } from "./HeaderCitie";
 
 // Constantes
 const STICKY_THRESHOLD = 54;
-const WHATSAPP_NUMBER = "573148042601";
+const WHATSAPP_NUMBER = "573225802429";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 
 // Menu items configuration
@@ -96,7 +96,7 @@ const WhatsAppContact = memo(() => (
           rel="noopener noreferrer"
           aria-label="Contactar por WhatsApp"
         >
-          +57 314 8042601
+          +57 3225802429
         </a>
       </h5>
     </div>
